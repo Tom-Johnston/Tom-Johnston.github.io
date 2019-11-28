@@ -1,0 +1,28 @@
+---
+---
+@import '_colors.scss';
+@import '_theme.scss';
+@import '_papers.scss';
+
+
+$width: 720px;
+
+#title{
+    color: $white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content{
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: $width;
+    overflow: auto;
+}
+
+@media (min-width: $width + 2*15px){
+
+    .content{
+        margin: 0 auto;
+    }
+}

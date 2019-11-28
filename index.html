@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Tom Johnston</title>
-  </head>
-  <body style="margin: 0">
-    <div id="container" style="align-items: center; background-color:#002b36; display: flex; height: 100vh; justify-content: center; width: 100vw;">
-      <h1 style="color: #cb4b16">Coming soon...</h1>
+---
+layout: default
+---
+<div class="content">
+<h1>About</h1>
+
+<p>I'm currently working towards a DPhil in combinatorics at the University of Oxford under the supervision of <a rel="noreferrer" target="_blank" href="https://people.maths.ox.ac.uk/scott/">Alex Scott</a>. Before starting my DPhil in 2017 I did an MMath in Oxford.</p>
+
+<p>My main reserach interest is extremal combinatorics, and I tend to spend most of my time working on problems that involve hypercubes in some way.</p>
+
+<h1>Papers</h1>
+<div>
+{% for paper_hash in site.data.papers %}
+{% assign paper = paper_hash[1] %}
+  <div class="references">
+    <div class="links">
+        <a class="pdf" href="{{paper.pdf}}" target="_blank"><img class="icon" src="adobe-pdf-icon.svg" alt="PDF of {{paper.title}}"></a>
     </div>
-  </body>
-</html>
+    <div class="info-wrapper">
+      <span class="title">{{paper.title}}</span>
+      <div class="authors">
+        {% for author in paper.authors %}
+        <span class="author">{{author.first}} {{author.last}}</span>
+        {% endfor %}
+      </div>
+      <span class="journal">{{paper.journal}}</span>
+      <div class="info">
+        <span class="year">{{paper.year}}</span>
+        <span class="volume">{{paper.volume}}</span>
+        <span class="pages">{{paper.pages}}</span>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+</div>
+</div>

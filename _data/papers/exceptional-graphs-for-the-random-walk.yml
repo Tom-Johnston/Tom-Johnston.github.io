@@ -1,0 +1,25 @@
+type: article
+title: "Exceptional graphs for the random walk"
+authors:
+ - first: Juhan
+   last: Aru
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+ - first: Bhargav
+   last: Narayanan
+ - first: Alex
+   last: Roberts
+journal: "Submitted"
+volume: 
+pages: 
+arxiv: "1903.10613"
+year: "2019+"
+pdf: "/papers/exceptional-graphs-for-the-random-walk.pdf"
+citation: "@article{aru2018exceptional,\n
+  title={Exceptional graphs for the random walk},\n
+  author={Aru, Juhan and Groenland, Carla and Johnston, Tom and Narayanan, Bhargav and Roberts, Alex and Scott, Alex},\n
+  journal={arXiv preprint arXiv:1805.06277},\n
+  year={2018}\n
+}"

@@ -1,0 +1,17 @@
+type: article
+title: "Lipschitz bijections between boolean functions"
+authors:
+ - first: Tom
+   last: Johnston
+ - first: Alex
+   last: Scott
+journal: Submitted
+arxiv: "1812.09215"
+year: 2018+
+pdf: "/papers/lipschitz-bijections-between-boolean-functions.pdf"
+citation: "@article{johnston2018lipschitz,\n
+  title={Lipschitz bijections between boolean functions},\n
+  author={Johnston, Tom and Scott, Alex},\n
+  journal={arXiv preprint arXiv:1812.09215},\n
+  year={2018}\n
+}"

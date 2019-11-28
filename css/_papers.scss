@@ -1,0 +1,105 @@
+.references{
+    display: flex;
+    background-color: rgba(246, 246, 246, 0.2);
+    border: solid 1px rgba(51,51,51,0.12);
+    margin: 16px;
+    overflow: auto;
+}
+
+.links, .info-wrapper{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 16px;
+}
+
+.info{
+    display: flex;
+}
+
+.info > :not(:last-child){
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: solid 1px rgba(51, 51, 51, 0.12)
+}
+
+.info-wrapper{
+    flex-grow: 1;
+}
+
+.info-wrapper > :not(:last-child){
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: solid 1px rgba(51, 51, 51, 0.12)
+}
+
+.title, .authors, .year, .journal, .volume, .pages{
+    padding-top: 1rem;
+    min-width: 3rem;
+    display: block;
+}
+
+.links{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+.year, .volume, .pages{
+    flex-grow: 1;
+}
+
+.authors{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.author{
+    padding-right: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+    margin-left: 4px;
+}
+
+.journal{
+    flex-grow: 1;
+}
+
+.title::before, .authors::before, .year::before, .journal::before, .volume::before, .pages::before{
+    position: absolute;
+    transform: translateY(-100%) translateX(1px);
+    font-size: 0.75rem;
+    color: $primary;
+}
+
+.title::before{
+    content: "Title";
+}
+
+.authors::before{
+    content: "Authors"
+}
+
+.year::before{
+    content: "Year"
+}
+
+.journal::before{
+    content: "Journal"
+}
+
+.volume::before{
+    content: "Vol."
+}
+
+
+.pages::before{
+    content: "Pages"
+}

@@ -1,0 +1,22 @@
+type: article
+title: "Intersection sizes of linear subspaces with the hypercube"
+authors:
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+journal: "Journal of Combinatorial Theory, Series A"
+volume: 170
+pages: "105-142"
+arxiv: "1810.02729"
+year: 2020
+pdf: "/papers/intersection-sizes-of-linear-subspaces-with-the-hypercube.pdf"
+citation: "@article{groenland2020intersection,\n
+  title={Intersection sizes of linear subspaces with the hypercube},\n
+  author={Groenland, Carla and Johnston, Tom},\n
+  journal={Journal of Combinatorial Theory, Series A},\n
+  volume={170},\n
+  pages={105-142},\n
+  year={2020},\n
+  publisher={Elsevier}\n
+}"
