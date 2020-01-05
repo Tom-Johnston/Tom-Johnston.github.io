@@ -20,6 +20,10 @@ $width: 720px;
     overflow: auto;
 }
 
+#main-content{
+    padding-bottom: 50px;
+}
+
 @media (min-width: $width + 2*15px){
 
     .content{
