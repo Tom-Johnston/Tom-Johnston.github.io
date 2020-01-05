@@ -15,7 +15,12 @@ layout: default
   <div class="references">
     <div class="links">
         <a class="pdf" href="{{paper.pdf}}" target="_blank"><img class="icon" src="adobe-pdf-icon.svg" alt="PDF of {{paper.title}}"></a>
+        <label>
+        <input class="citation-checkbox" type="checkbox">
+        {% include cite.svg %}
+        </label>
     </div>
+    <div class="info-wrapper-wrapper">
     <div class="info-wrapper">
       <span class="title">{{paper.title}}</span>
       <div class="authors">
@@ -29,9 +34,39 @@ layout: default
         <span class="volume">{{paper.volume}}</span>
         <span class="pages">{{paper.pages}}</span>
       </div>
+    
     </div>
+    <div class="citation-wrapper">
+      <span class="citation">{{paper.citation}}</span>
+    </div>
+  </div>
   </div>
 
 {% endfor %}
 </div>
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    var citationCheckboxes = document.getElementsByClassName('citation-checkbox')
+    for (var citCheck of citationCheckboxes){
+      citCheck.addEventListener('change', toggleCitation)
+    }
+});
+
+function toggleCitation(e){
+  if (e.target.checked){
+    var infoWrapperWrapper = e.target.closest('.references').getElementsByClassName('info-wrapper-wrapper')[0]
+    var infoWrapper = infoWrapperWrapper.getElementsByClassName('info-wrapper')[0]
+    var citWrapper = infoWrapperWrapper.getElementsByClassName('citation-wrapper')[0]
+    infoWrapper.style.visibility = 'hidden';
+    citWrapper.style.display = 'block';
+  }else{
+    var infoWrapperWrapper = e.target.parentElement.parentElement.parentElement.getElementsByClassName('info-wrapper-wrapper')[0]
+    var infoWrapper = infoWrapperWrapper.getElementsByClassName('info-wrapper')[0]
+    var citWrapper = infoWrapperWrapper.getElementsByClassName('citation-wrapper')[0]
+    infoWrapper.style.visibility = 'visible';
+    citWrapper.style.display = 'none';
+  }
+}
+</script>
