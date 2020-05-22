@@ -1,2 +1,6 @@
 sass:
     sass_dir: css
+
+collections:
+    posts:
+        permalink: /blog/:categories/:year-:month-:day-:title:output_ext

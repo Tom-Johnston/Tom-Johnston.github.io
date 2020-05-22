@@ -24,6 +24,19 @@ $width: 720px;
     padding-bottom: 50px;
 }
 
+.centering{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-share{
+    display: flex;
+}
+
+.flex-share *{
+    flex-grow: 1;
+}
+
 @media (min-width: $width + 2*15px){
 
     .content{

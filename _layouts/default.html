@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>Tom Johnston</title>
     <meta name="Description" content="Tom Johnston's personal webpage.">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css">
+    {% if page.math == true %}
+      {% include katex.html %}
+    {% endif %}
   </head>
   <body>
       <header class="header">
