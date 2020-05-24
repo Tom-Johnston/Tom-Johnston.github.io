@@ -130,6 +130,7 @@ strong {
 img {
   padding: 5px;
   margin: 10px 0 10px 0;
+  max-width: 100%;
 }
 
 blockquote {
@@ -195,6 +196,13 @@ td {
 form {
   background: #f2f2f2;
   padding: 20px;
+}
+
+code{
+  font-family: monospace;
+  background: #e8e8e8;
+  padding: .1em .25em;
+  border-radius: .2rem;
 }
 
 @media screen and (max-width: 480px) {
