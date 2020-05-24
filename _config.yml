@@ -4,3 +4,10 @@ sass:
 collections:
     posts:
         permalink: /blog/:categories/:year-:month-:day-:title:output_ext
+
+plugins:
+ - jekyll-sitemap
+ - jekyll-paginate
+
+paginate: 10
+paginate_path: "/blog/page:num/"

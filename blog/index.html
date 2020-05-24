@@ -1,0 +1,83 @@
+---
+layout: default
+title: Blog
+math: true
+---
+<div class="content">
+	<div id="posts">
+
+		{% for post in paginator.posts %}
+		<div class="paginate-post">
+			<h2 class="paginate-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+			<span class="hint date">{{ post.date | date_to_long_string }}</span>
+			<div>
+				{{post.excerpt | markdownify}}
+			</div>
+			<a href="{{post.url}}">Read more...</a>
+		</div>
+		{% endfor %}
+	</div>
+
+	<div class="pagination-links">
+		<ul class="pagination-links-list">
+			{% if paginator.previous_page %}
+			<li class="pagination-step-page">
+				<a href="{{ paginator.previous_page_path }}">&lsaquo;</a>
+			</li>
+			{% else %}
+			<li class="pagination-step-page disabled">&lsaquo;</li>
+			{% endif %}
+
+			{% assign num = 3 %}
+			{% assign cutoff = num | plus: num | plus:1 %}
+			{% assign low = num | plus: 1 %}
+			{% assign hi = paginator.total_pages| minus: num %}
+			{% if paginator.total_pages <= cutoff %}
+				{% assign start = 1 %}
+				{% assign end = paginator.total_pages %}
+			{% elsif paginator.page <= low%}
+				{% assign start = 1 %}
+				{% assign end = cutoff |minus: 1 %}
+			{% elsif paginator.page >= hi  %}
+				{% assign end = paginator.total_pages %}
+				{% assign start = paginator.total_pages| minus: cutoff |plus: 1 %}
+			{% else %}
+				{% assign start = paginator.page | minus: num |plus: 1 %}
+				{% assign end = paginator.page| plus: num| minus: 1 %}
+			{% endif %}
+
+			{% if start != 1 %}
+				<li class="paginate-ellipsis">...</li>
+			{% endif %}
+
+			{% for page in (start..end) %}
+				{% if page == paginator.page %}
+					<li class="pagination-active">
+						<a href="#">{{page}}</a>
+					</li>
+				{% elsif page == 1 %}
+					<li>
+						<a href="{{  site.paginate_path | prepend: site.baseurl |replace: '/page:num', '' }}">{{ page }}</a>
+					</li>
+				{% else %}
+					<li>
+						<a	href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+
+			{% if end != paginator.total_pages %}
+				<li class="paginate-ellipsis">...</li>
+			{% endif %}
+
+
+			{% if paginator.next_page %}
+			<li class="pagination-step-page">
+				<a href="{{ paginator.next_page_path }}">&rsaquo;</a>
+			</li>
+			{% else %}
+			<li class="pagination-step-page disabled">&rsaquo;</li>
+			{% endif %}
+		</ul>
+	</div>
+</div>
