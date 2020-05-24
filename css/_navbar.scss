@@ -1,0 +1,238 @@
+.navbar-toggle-icon{
+    cursor: pointer;
+    height: 44px;
+}
+
+.navbar-wrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+
+.navbar-checkbox, .navbar-toggle{
+    position: absolute;
+    top: -999px;
+}
+
+.navbar-toggle:checked + .navbar-container{
+    display: block;
+}
+
+.navbar-container{
+    display: none;
+    background-color: $background-color;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.navbar, .navbar-expand {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+.navbar-link, .navbar-expand-link, .navbar-label{
+    color: inherit;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+
+    &:hover{
+        text-decoration: none; 
+    }
+}
+
+.navbar-label::after{
+    content: url('../images/navbar/dropdown-primary-dark.svg');
+    margin-left: 0.25rem;
+    width: 16px;
+    display: inline-block;
+    transition: transform 250ms ease-out;
+    transform: rotate(-45deg);
+}
+
+.navbar-link:hover, .navbar-link:focus{
+    text-decoration: none;
+}
+
+.navbar-item{
+    position: relative;
+}
+
+.navbar-expand{
+    display: none;
+	overflow: hidden;
+    padding: 0;
+    padding-left: 0.5rem;
+	position: relative;
+	white-space: nowrap;
+}
+
+.navbar-expand-link{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navbar-item, .navbar-expand-item{
+    border-top: 1px solid $hint-color;
+    color: $primary-dark;
+
+    &:hover, &:focus-within{
+        color: $secondary;
+    }
+}
+.navbar-item:hover .navbar-label::after, .navbar-item:focus-within .navbar-label::after{
+    content: url('../images/navbar/dropdown-secondary.svg');
+}
+
+.navbar-checkbox:checked + .navbar-label::after{
+    transform: rotate(135deg);
+}
+
+.navbar-item:first-of-type, .navbar-expand-item:first-of-type{
+    border-top: none;
+}
+
+.navbar-checkbox:checked ~ .navbar-expand{
+    display: block;
+}
+
+.small-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+
+$cutoff: 1000px;
+
+@media (min-width: $cutoff){
+
+    .navbar-item:hover, .navbar-item:focus-within{
+        background-color: $primary-dark;
+    }
+
+    .navbar-item, .navbar-expand-item{
+        border-top: none;
+    }
+
+    .navbar-wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    .navbar-container{
+        display: block;
+        width: auto;
+        background-color: transparent;
+        margin: 0;
+    }
+
+    .navbar{
+        flex-direction: row;
+        width: auto;
+    }
+
+    .navbar-expand{
+        background: $background-color;
+        min-width: 100%;
+        position: absolute;
+        padding: 0;
+        top: 100%;
+        z-index: 100;
+        border-left: 1px solid $primary;
+        border-right: 1px solid $primary;
+    }
+
+    .navbar-expand-item{
+        border-bottom: 1px solid $primary;
+    }
+
+    .navbar-link, .navbar-label{
+        color: #fff;
+
+        &:hover, &:focus{
+            color: #fff;
+        }
+    }
+
+    .navbar-toggle-label{
+        display: none;
+    }
+
+    .navbar-item:hover > .navbar-expand{
+        display: block;
+    }
+
+    .navbar-label::after{
+        content: url('../images/navbar/dropdown.svg');
+    }
+
+    .navbar-item:hover .navbar-label::after, .navbar-item:focus-within .navbar-label::after{
+        content: url('../images/navbar/dropdown.svg');
+        transform: rotate(135deg);
+    }
+
+}
+
+.content-large{
+    max-width: none;
+    margin: 0;
+}
+
+.content-small{
+    max-width: $width;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-grow: 1;
+}
+
+
+@media (min-width: $width + 2*15px) {
+
+    .content-small{
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (min-width: $cutoff){
+
+    .content-small{
+        max-width: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .content-large{
+        max-width: $width;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+@media (min-width: $width + 2*15px) and (min-width: $cutoff){
+
+    .content-small{
+        max-width: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .content-large{
+        max-width: $width;
+        margin: 0 auto;
+    }
+}

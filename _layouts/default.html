@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Tom Johnston</title>
-    <meta name="Description" content="Tom Johnston's personal webpage.">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css">
-    {% if page.math == true %}
-      {% include katex.html %}
-    {% endif %}
-  </head>
-  <body>
-      <header class="header">
-        <div class="content">
-          <h1 id="title">Tom Johnston</h1>
-        </div>
-      </header>
-    {{ content }}
-  </body>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  {% if page.title %}
+    <title>{{page.title}} - Tom Johnston</title>
+  {% else %}
+  <title>Tom Johnston</title>
+  {% endif %}
+  <meta name="Description" content="Tom Johnston's personal webpage.">
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/styles.css">
+  {% if page.math == true %}
+    {% include katex.html %}
+  {% endif %}
+</head>
+
+<body>
+  <header class="header">
+    <div class="content-large navbar-wrapper">
+      <div class="content-small small-wrapper">
+        <h1 id="title"><a href="/">Tom Johnston</a></h1>
+        <label for="navbar-toggle" class="navbar-toggle-label"><img src="/images/navbar/hamburger.svg" class="navbar-toggle-icon"></label>
+
+      </div>
+      <input id="navbar-toggle" class="navbar-toggle" type="checkbox">
+      <div class="navbar-container">
+        <ul class="navbar content-small">
+          <li class="navbar-item">
+            <a class="navbar-link" href="/">About</a>
+          </li>
+          <!-- <li class="navbar-item">
+            <input id="1" class="navbar-checkbox" type="checkbox">
+            <label for="1" class="navbar-label">Test</label>
+            
+            <ul class="navbar-expand">
+              <li class="navbar-expand-item">
+                <a class="navbar-expand-link" href="/1">1</a>
+              </li>
+              <li class="navbar-expand-item">
+                <a class="navbar-expand-link" href="/2">2</a>
+              </li>
+              <li class="navbar-expand-item">
+                <a class="navbar-expand-link" href="/3">3</a>
+              </li>
+              <li class="navbar-expand-item">
+                <a class="navbar-expand-link" href="/4">4</a>
+              </li>
+            </ul>
+          </li> -->
+          <li class="navbar-item">
+            <a class="navbar-link" href="/blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  {{ content }}
+</body>
+
 </html>
