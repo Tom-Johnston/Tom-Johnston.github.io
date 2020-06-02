@@ -16,16 +16,6 @@ $width: 720px;
 @import "_navbar.scss";
 @import "_blog.scss";
 
-#title {
-    margin: 0;
-    padding: 0.5rem 1rem;
-
-    a{
-        color: $white;
-        text-decoration: none;
-    }
-}
-
 #main-content {
     padding-bottom: 50px;
 }
