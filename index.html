@@ -11,8 +11,11 @@ math: true
 
 <h1>Papers</h1>
 <div>
-{% for paper_hash in site.data.papers %}
-{% assign paper = paper_hash[1] %}
+
+{% assign order = site.data.papers["_order"] | reverse %}
+
+{% for paper_hash in order %}
+{% assign paper = site.data.papers[paper_hash] %}
   <div class="references">
     <div class="links">
         <a class="pdf" href="{{paper.pdf}}" target="_blank"><img class="icon" src="/images/adobe-pdf-icon.svg" alt="PDF of {{paper.title}}"></a>
