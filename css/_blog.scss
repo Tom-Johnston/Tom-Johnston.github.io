@@ -2,8 +2,8 @@
     border-color: rgba(0, 0, 0, 0.12);
     border-style: solid;
     border-width: 1px 0 0 0;
-    padding-top: 1rem;
     margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .paginate-post:first-child {
@@ -12,22 +12,21 @@
     padding-top: 0;
 }
 
-.paginate-title{
+.paginate-title {
     margin-bottom: 0;
 }
 
-.paginate-title a{
+.paginate-title a {
     color: $text-color;
-
-    &:hover{
+    &:hover {
         color: $text-color;
         text-decoration-color: $secondary;
     }
 }
 
 .paginate-date {
-    opacity: 0.7;
     font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 .pagination-step-page {
@@ -39,7 +38,6 @@
     margin-top: 3rem;
     text-align: center;
     user-select: none;
-
     li {
         border-radius: 2px;
         display: inline-block;
@@ -47,11 +45,10 @@
         padding: 0 10px;
         text-align: center;
     }
-
-    a{
+    a {
         color: $text-color;
-
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             color: $secondary;
             text-decoration: none;
         }
@@ -60,26 +57,23 @@
 
 .pagination-active {
     background-color: $primary;
-
-    &:hover, &:focus-within{
+    &:hover,
+    &:focus-within {
         background-color: $primary-dark;
     }
-
-    a{
+    a {
         color: #fff;
-
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             color: #fff;
         }
     }
-
-
 }
 
 .pagination-disabled {
     opacity: 0.3;
 }
 
-.pagination-links-list .paginate-ellipsis{
+.pagination-links-list .paginate-ellipsis {
     padding: 0;
 }

@@ -3,25 +3,23 @@
     margin-left: 15px;
     padding: 0.5rem 1rem;
 
-    a{
+    a {
         color: $white;
         text-decoration: none;
 
-        &:focus{
+        &:focus {
             box-shadow: 0 0 0 1px black, 0 0 0 2px white;
         }
     }
-
-
 }
 
-.navbar-toggle-icon{
+.navbar-toggle-icon {
     cursor: pointer;
     vertical-align: middle;
     height: 44px;
 }
 
-.navbar-wrapper{
+.navbar-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,17 +29,18 @@
     margin: 0;
 }
 
-.navbar-checkbox, .navbar-toggle{
+.navbar-checkbox,
+.navbar-toggle {
     position: absolute;
     top: -999px;
 }
 
-
-.navbar-toggle:focus + .navbar-toggle-label, .navbar-toggle-label:hover{
+.navbar-toggle:focus + .navbar-toggle-label,
+.navbar-toggle-label:hover {
     background-color: $primary-dark;
 }
 
-.navbar-toggle-label{
+.navbar-toggle-label {
     color: white;
     border: solid white 1px;
     border-radius: 2px;
@@ -50,16 +49,16 @@
     margin-right: 15px;
 }
 
-.navbar-toggle:checked ~ .navbar{
+.navbar-toggle:checked ~ .navbar {
     display: flex;
 }
 
-
-.navbar-expand{
+.navbar-expand {
     display: flex;
 }
 
-.navbar, .navbar-expand {
+.navbar,
+.navbar-expand {
     padding: 0;
     list-style-type: none;
     position: relative;
@@ -67,7 +66,7 @@
     flex-direction: column;
 }
 
-.navbar{
+.navbar {
     display: none;
     background-color: $background-color;
     padding-left: 15px;
@@ -76,22 +75,23 @@
     width: 100%;
 }
 
-
-.navbar-link, .navbar-expand-link, .navbar-label{
+.navbar-link,
+.navbar-expand-link,
+.navbar-label {
     color: inherit;
     cursor: pointer;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 18px;
     text-align: center;
     display: inline-block;
 
-    &:hover{
-        text-decoration: none; 
+    &:hover {
+        text-decoration: none;
     }
 }
 
-.navbar-label::after{
-    content: url('../images/navbar/dropdown-primary-dark.svg');
+.navbar-label::after {
+    content: url("../images/navbar/dropdown-primary-dark.svg");
     margin-left: 0.25rem;
     width: 16px;
     display: inline-block;
@@ -99,71 +99,77 @@
     transform: rotate(-45deg);
 }
 
-.navbar-link:hover, .navbar-link:focus{
+.navbar-link:hover,
+.navbar-link:focus {
     text-decoration: none;
 }
 
-.navbar-item{
+.navbar-item {
     position: relative;
 }
 
-.navbar-expand{
+.navbar-expand {
     display: none;
-	overflow: hidden;
+    overflow: hidden;
     padding: 0;
     padding-left: 0.5rem;
-	position: relative;
-	white-space: nowrap;
+    position: relative;
+    white-space: nowrap;
 }
 
-.navbar-expand-link{
+.navbar-expand-link {
     display: inline-block;
     font-size: 16px;
 }
 
-.navbar-item, .navbar-expand-item{
+.navbar-item,
+.navbar-expand-item {
     border-top: 1px solid $hint-color;
     color: $primary-dark;
 
-    &:hover, &:focus-within{
+    &:hover,
+    &:focus-within {
         color: $secondary;
     }
 }
-.navbar-item:hover .navbar-label::after, .navbar-item:focus-within .navbar-label::after{
-    content: url('../images/navbar/dropdown-secondary.svg');
+.navbar-item:hover .navbar-label::after,
+.navbar-item:focus-within .navbar-label::after {
+    content: url("../images/navbar/dropdown-secondary.svg");
 }
 
-.navbar-checkbox:checked + .navbar-label::after{
+.navbar-checkbox:checked + .navbar-label::after {
     transform: rotate(135deg);
 }
 
-.navbar-item:first-of-type, .navbar-expand-item:first-of-type{
+.navbar-item:first-of-type,
+.navbar-expand-item:first-of-type {
     border-top: none;
 }
 
-.navbar-checkbox:checked ~ .navbar-expand{
+.navbar-checkbox:checked ~ .navbar-expand {
     display: block;
 }
 
 $cutoff: 500px;
 
-@media (min-width: $cutoff){
-
-    .navbar-item:hover, .navbar-item:focus-within{
+@media (min-width: $cutoff) {
+    .navbar-item:hover,
+    .navbar-item:focus-within {
         background-color: $primary-dark;
     }
 
-    .navbar-item, .navbar-expand-item{
+    .navbar-item,
+    .navbar-expand-item {
         border-top: none;
     }
 
-    .navbar-wrapper{
+    .navbar-wrapper {
         display: flex;
         flex-wrap: nowrap;
         align-items: flex-end;
     }
 
-    .navbar{
+    .navbar {
         background-color: transparent;
         display: flex;
         flex-direction: row;
@@ -171,7 +177,7 @@ $cutoff: 500px;
         width: auto;
     }
 
-    .navbar-expand{
+    .navbar-expand {
         background: $background-color;
         min-width: 100%;
         position: absolute;
@@ -182,78 +188,74 @@ $cutoff: 500px;
         border-right: 1px solid $primary;
     }
 
-    .navbar-expand-item{
+    .navbar-expand-item {
         border-bottom: 1px solid $primary;
     }
 
-    .navbar-link, .navbar-label{
+    .navbar-link,
+    .navbar-label {
         color: #fff;
 
-        &:hover, &:focus{
+        &:hover,
+        &:focus {
             color: #fff;
         }
     }
 
-    .navbar-toggle, .navbar-toggle-label{
+    .navbar-toggle,
+    .navbar-toggle-label {
         display: none;
     }
 
-    .navbar-item:hover > .navbar-expand{
+    .navbar-item:hover > .navbar-expand {
         display: block;
     }
 
-    .navbar-label::after{
-        content: url('../images/navbar/dropdown.svg');
+    .navbar-label::after {
+        content: url("../images/navbar/dropdown.svg");
     }
 
-    .navbar-item:hover .navbar-label::after, .navbar-item:focus-within .navbar-label::after{
-        content: url('../images/navbar/dropdown.svg');
+    .navbar-item:hover .navbar-label::after,
+    .navbar-item:focus-within .navbar-label::after {
+        content: url("../images/navbar/dropdown.svg");
         transform: rotate(135deg);
     }
-
 }
-
 
 @media (min-width: $width + 2*15px) {
-
-    #title{
-        margin-left: calc((100vw - #{$width})/2); 
+    #title {
+        margin-left: calc((100vw - #{$width}) / 2);
     }
 
-    .navbar-toggle-label{
-        margin-right: calc((100vw - #{$width})/2); 
+    .navbar-toggle-label {
+        margin-right: calc((100vw - #{$width}) / 2);
     }
 
-    .navbar{
-        padding-left: calc((100vw - #{$width})/2); 
-        padding-right: calc((100vw - #{$width})/2); 
+    .navbar {
+        padding-left: calc((100vw - #{$width}) / 2);
+        padding-right: calc((100vw - #{$width}) / 2);
     }
-
 }
 
-
-@media (min-width: $cutoff){
-
-    #title{
+@media (min-width: $cutoff) {
+    #title {
         margin-left: 0;
     }
 
-    .navbar{
+    .navbar {
         padding-left: 0;
         padding-right: 0;
     }
 
-    .navbar-wrapper{
+    .navbar-wrapper {
         max-width: $width;
         margin-left: 15px;
         margin-right: 15px;
     }
 }
 
-
-@media (min-width: $width + 2*15px) and (min-width: $cutoff){
-
-    .navbar-wrapper{
+@media (min-width: $width + 2*15px) and (min-width: $cutoff) {
+    .navbar-wrapper {
         max-width: $width;
         margin: 0 auto;
     }
