@@ -17,13 +17,14 @@ math: true
 {% for paper_hash in order %}
 {% assign paper = site.data.papers[paper_hash] %}
   <div class="references">
+    <input class="citation-checkbox" type="checkbox" id="{{paper_hash}}">
     <div class="links">
+      <label for="{{paper_hash}}">
+        {% include cite.svg %}
+      </label>
         <a class="pdf" href="{{paper.pdf}}" target="_blank"><img class="icon" src="/images/adobe-pdf-icon.svg" alt="PDF of {{paper.title}}"></a>
-        <label>
-          <input class="citation-checkbox" type="checkbox">
-          {% include cite.svg %}
-        </label>
     </div>
+    
     <div class="info-wrapper-wrapper">
     <div class="info-wrapper">
       <span class="title">{{paper.title}}</span>
@@ -52,28 +53,3 @@ math: true
 <h1>Contact</h1>
 <p>If you have any questions or comments about some interesting maths (or the maths I've done), feel free to send me an email at <a href="mailto:thomas.johnston@lmh.ox.ac.uk">thomas.johnston@lmh.ox.ac.uk</a>.</p>
 </div>
-
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    var citationCheckboxes = document.getElementsByClassName('citation-checkbox')
-    for (var citCheck of citationCheckboxes){
-      citCheck.addEventListener('change', toggleCitation)
-    }
-});
-
-function toggleCitation(e){
-  if (e.target.checked){
-    var infoWrapperWrapper = e.target.closest('.references').getElementsByClassName('info-wrapper-wrapper')[0]
-    var infoWrapper = infoWrapperWrapper.getElementsByClassName('info-wrapper')[0]
-    var citWrapper = infoWrapperWrapper.getElementsByClassName('citation-wrapper')[0]
-    infoWrapper.style.visibility = 'hidden';
-    citWrapper.style.display = 'block';
-  }else{
-    var infoWrapperWrapper = e.target.parentElement.parentElement.parentElement.getElementsByClassName('info-wrapper-wrapper')[0]
-    var infoWrapper = infoWrapperWrapper.getElementsByClassName('info-wrapper')[0]
-    var citWrapper = infoWrapperWrapper.getElementsByClassName('citation-wrapper')[0]
-    infoWrapper.style.visibility = 'visible';
-    citWrapper.style.display = 'none';
-  }
-}
-</script>
