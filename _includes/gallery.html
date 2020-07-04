@@ -1,0 +1,92 @@
+<link rel="stylesheet" type="text/css" href="/css/gallery.css"/>
+
+<div id="modal-wrapper" class="modal">
+    <div id="close-wrapper" class="close-wrapper">
+        <span class="close"></span>
+    </div>
+    <div class="modal-content">
+        <img id="img" src="" alt=""/>    
+    </div>
+    <a id="prev" class="prev">❮</a>
+    <a id="next" class="next">❯</a>
+    <div class="caption-wrapper">
+            <p id="caption"></p>
+        </div>
+  </div>
+  <div class="gallery">
+        {% for photo in page.photos %}
+            <img class="gallery-item" src="{{photo.src}}" sizes="(min-width: 750px) calc((720px * 0.33) - 20px), calc(((100vw - 30px) * 0.33) - 20px)" srcset="{{photo.srcset}}" alt="{{photo.title}}" loading="lazy">
+        {% endfor %}
+    </div>
+
+  <script>
+      var images = [
+          {% for photo in page.photos %}
+            {title: "{{photo.title}}", src: "{{photo.src}}"},
+          {% endfor %}
+      ]
+
+    var modal;
+    var currentSlide = 0;
+    var img;
+    var caption;
+    var scrollY;
+
+      // Open the Modal
+    function openModal() {
+        modal.style.display = "flex";
+        scrollY = window.pageYOffset
+    }
+
+    // Close the Modal
+    function closeModal() {
+        modal.style.display = "none";
+        window.scroll(0, scrollY)
+        
+    }
+
+    function show(title, src){
+        img.src = src;
+        img.alt = title;
+        caption.innerHTML = title;
+    }
+
+    function showNext(){
+        currentSlide = (currentSlide + 1) % images.length;
+        show(images[currentSlide].title, images[currentSlide].src)
+    }
+
+    function showPrevious(){
+        currentSlide = (currentSlide + images.length - 1) % images.length;
+        show(images[currentSlide].title, images[currentSlide].src)
+    }
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+        modal = document.getElementById('modal-wrapper')
+        img = document.getElementById('img')
+        caption = document.getElementById('caption')
+        var galleryImages = document.getElementsByClassName("gallery-item")
+        for (let i = 0; i < galleryImages.length; i++){
+            var image = galleryImages[i]
+            image.addEventListener("click", (event) => {openModal();show(images[i].title, images[i].src); currentSlide = i})
+        }
+        document.getElementById('close-wrapper').addEventListener("click", closeModal);
+        document.getElementById('next').addEventListener("click", showNext);
+        document.getElementById('prev').addEventListener("click", showPrevious);
+    } );
+
+    document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 27) {
+            closeModal();
+        }
+
+        if (evt.keyCode == 37){
+            showPrevious();
+        }
+
+        if (evt.keyCode == 39){
+            showNext();
+        }
+    };
+  </script>
