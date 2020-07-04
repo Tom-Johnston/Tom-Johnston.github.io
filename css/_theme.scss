@@ -211,8 +211,6 @@ strong {
 }
 
 img {
-  padding: 5px;
-  margin: 10px 0 10px 0;
   max-width: 100%;
 }
 
@@ -364,4 +362,13 @@ code {
     max-width: 320px;
     font-size: 11px;
   }
+}
+
+figure{
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+figcaption{
+  font-size: 90%;
 }
