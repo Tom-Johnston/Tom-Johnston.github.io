@@ -215,10 +215,10 @@ img {
 }
 
 blockquote {
-  color: #666;
+  color: $text-color;
   margin-bottom: 20px;
   padding: 0 0 0 20px;
-  border-left: 3px solid #bbb;
+  border-left: 3px solid $primary;
 }
 
 ul,
@@ -371,4 +371,8 @@ figure{
 
 figcaption{
   font-size: 90%;
+}
+
+svg {
+  max-width: 100%;
 }
