@@ -120,8 +120,6 @@ And for combinatorics.
 
 </div>
 
-<link rel="stylesheet" type="text/css" media="screen" href="/css/solarize.css">
-
 ## Code
 
 You can download the code I used to pull the data from arXiv and generate the statisitics below. The graphs are saved from some poorly hacked together d3.js code that is a collage of different snippets I found online and I'm not prepared to put my name on it.
