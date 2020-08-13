@@ -22,6 +22,12 @@
         color: $text-color;
         text-decoration-color: $secondary;
     }
+
+    @media print{
+        &:link:after, &:visited:after{
+            content: none;
+        }
+    }
 }
 
 .paginate-date {
@@ -66,6 +72,12 @@
         &:hover,
         &:focus {
             color: #fff;
+        }
+
+        @media print{
+            &:link:after, &:visited:after{
+                content: none;
+            }
         }
     }
 }

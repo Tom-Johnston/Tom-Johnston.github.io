@@ -50,6 +50,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media print{
+        display: none;
+    }
 }
 
 .icon {
