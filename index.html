@@ -33,13 +33,14 @@ math: true
         <span class="author">{{author.first}} {{author.last}}</span>
         {% endfor %}
       </div>
+      <input class="journal-checkbox" type="checkbox" id="{{paper_hash}}-journal">
       <span class="journal">{{paper.journal}}</span>
       <div class="info">
         <span class="year">{{paper.year}}</span>
         <span class="volume">{{paper.volume}}</span>
         <span class="pages">{{paper.pages}}</span>
       </div>
-    
+      <label class="journal-checkbox-label" for="{{paper_hash}}-journal"></label>
     </div>
     <div class="citation-wrapper">
       <span class="citation">{{paper.citation}}</span>

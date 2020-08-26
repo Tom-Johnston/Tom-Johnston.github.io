@@ -6,13 +6,37 @@
     overflow: auto;
 }
 
+.title,
+.authors,
+.year,
+.journal,
+.volume,
+.pages,
+.citation {
+    padding-top: 1rem;
+    min-width: 3rem;
+    display: block;
+}
+
 .links,
 .info-wrapper {
     padding: 8px 12px;
 }
 
-.info {
+.journal, .info {
+    display: none;
+}
+
+.journal-checkbox:checked ~ .journal{
+    display: block;
+}
+
+.journal-checkbox:checked ~ .info{
     display: flex;
+}
+
+.journal {
+    flex-grow: 1;
 }
 
 .info > :not(:last-child) {
@@ -32,21 +56,7 @@
     border-bottom: solid 1px rgba(51, 51, 51, 0.12);
 }
 
-.title,
-.authors,
-.year,
-.journal,
-.volume,
-.pages,
-.citation {
-    padding-top: 1rem;
-    min-width: 3rem;
-    display: block;
-}
-
 .links {
-    grid-row-start: 1;
-    grid-row-end: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,10 +103,6 @@
     margin-right: 4px;
     padding-left: 4px;
     margin-left: 4px;
-}
-
-.journal {
-    flex-grow: 1;
 }
 
 .citation {
@@ -182,4 +188,26 @@
 
 .citation-checkbox:checked ~ .info-wrapper-wrapper .info-wrapper {
     visibility: hidden;
+}
+
+.journal-checkbox{
+    display: none;
+}
+
+.journal-checkbox:checked ~ .journal-checkbox-label{
+    &::before{
+        content: 'Show less';
+    }
+}
+
+.journal-checkbox-label{
+    color: $primary;
+    display: block;
+    font-size: 0.75rem;
+    text-align: center;
+    width: 100%;
+
+    &::before{
+        content: 'Show more';
+    }
 }
