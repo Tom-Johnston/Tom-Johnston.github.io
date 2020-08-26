@@ -8,7 +8,7 @@
 
 .links,
 .info-wrapper {
-    padding: 16px;
+    padding: 8px 12px;
 }
 
 .info {
@@ -16,8 +16,8 @@
 }
 
 .info > :not(:last-child) {
-    padding-right: 8px;
-    margin-right: 8px;
+    padding-right: 4px;
+    margin-right: 4px;
     border-right: solid 1px rgba(51, 51, 51, 0.12);
 }
 
@@ -27,8 +27,8 @@
 }
 
 .info-wrapper > :not(:last-child) {
-    padding-bottom: 8px;
-    margin-bottom: 8px;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
     border-bottom: solid 1px rgba(51, 51, 51, 0.12);
 }
 
