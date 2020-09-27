@@ -67,22 +67,13 @@
 }
 
 .icon {
-    height: 2rem;
-    width: 2rem;
-}
-
-.pdf {
-    img {
-        border-bottom: solid 1px transparent;
-        margin: 0;
-        height: calc(2rem + 1px);
-    }
+    height: 24px;
+    width: 24px;
+    fill: $text-color;
 
     &:hover,
     &:focus {
-        img {
-            border-bottom: solid 1px $secondary;
-        }
+        fill: $secondary;
     }
 }
 
@@ -156,22 +147,22 @@
     left: -999px;
 }
 
-.citation-checkbox ~ .links svg:hover {
+.citation-checkbox ~ .links label svg:hover {
     stroke: $secondary;
 }
 
-.citation-checkbox:focus ~ .links svg {
+.citation-checkbox:focus ~ .links label svg {
     stroke: $secondary;
 }
 
-.citation-checkbox ~ .links svg {
+.citation-checkbox ~ .links label svg {
     fill: none;
-    stroke: black;
+    stroke: $text-color;
     cursor: pointer;
 }
 
-.citation-checkbox:checked ~ .links svg {
-    fill: black;
+.citation-checkbox:checked ~ .links label svg {
+    fill: $text-color;
 }
 
 .citation-checkbox:checked ~ .info-wrapper-wrapper .citation-wrapper {
