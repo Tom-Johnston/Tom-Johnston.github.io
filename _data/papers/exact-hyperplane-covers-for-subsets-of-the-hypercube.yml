@@ -1,0 +1,26 @@
+type: article
+title: "Exact hyperplane covers for subsets of the hypercube"
+authors:
+ - first: James
+   last: Aaronson
+ - first: Carla
+   last: Groenland
+ - first: Andrzej
+   last: Grzesik
+ - first: Tom
+   last: Johnston
+ - first: Bartłomiej
+   last: Kielak
+journal: "Submitted"
+volume: 
+pages: 
+arxiv: ""
+year: "2020+"
+pdf: "/papers/exact-hyperplane-covers-for-subsets-of-the-hypercube.pdf"
+citation: "@article{aaronson2020exact,\n
+  title={Exact hyperplane covers for subsets of the hypercube},\n
+  author={Aaronson, James and Groenland, Carla and Grzesik, Andrzej and Johnston, Tom and Kielak, Bart{\\l}omiej},\n
+  journal={arXiv preprint arXiv:2010.00315},\n
+  year={2020}\n
+}"
+code: "/papers/code/exact-hyperplane-covers-for-subsets-of-the-hypercube.zip"
