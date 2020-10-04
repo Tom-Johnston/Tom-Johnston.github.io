@@ -14,7 +14,7 @@ math: true
 
 <span class="hint">Joint work with Marthe Bonamy, Carla Groenland, Tash Morrison and Alex Scott.</span>
 
-A graph \\(G\\) is said to be *induced saturated for \\(H\\)* if \\(G\\) contains no induced copy of \\(H\\), but adding or removing any edge creates an induced copy. While this definiton holds for any graph \\(H\\), research has so far focused on paths and, to a lesser extent, cycles.
+A graph \\(G\\) is said to be *induced saturated for \\(H\\)* if \\(G\\) contains no induced copy of \\(H\\), but adding or removing any edge creates an induced copy. While this definition holds for any graph \\(H\\), research has so far focused on paths and, to a lesser extent, cycles.
 
 Paths are nearly completely understood: the cases \\(P_2\\) and \\(P_3\\) are easily handled by the empty and complete graphs respectively, the case \\(P_4\\) was shown to be impossible by Martin and Smith in 2012, and the case of \\(P_n\\) where \\(n \geq 6\\) has recently been solved by Vojtěch Dvořák. This leaves just the case \\(P_5\\) which we close here.
 
