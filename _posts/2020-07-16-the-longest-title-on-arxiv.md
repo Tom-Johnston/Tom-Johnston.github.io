@@ -36,7 +36,7 @@ As a bonus, we can also check the shortest titles. The shortest in all of maths 
 
 I can't remember exactly how this question came about but it was in a conversation with some coauthors (Alex Scott, Carla Groenland and Jane Tan) when we were starting to look at a problem for planar graphs and graphs embeddable on higher-dimensional surfaces. Planar graphs were the obvious starting point and I remarked that they certainly make the catchier title, or at least the shorter title. Somehow this lead to the question of how long the titles of papers get and the most obvious (and easily accessible) dataset is arXiv.
 
-Pulling all the metadata from arXiv is a relatively straightforward process as thye provide an [API](https://arxiv.org/help/oa/index) explicitly designed for bulk data access. The standard is pretty well-documented and it didn't take long to write a basic harvester (code at the bottom of the page) to pull and parse the data in the `arXiv` format. There are a few things worth noting about the data though. 
+Pulling all the metadata from arXiv is a relatively straightforward process as they provide an [API](https://arxiv.org/help/oa/index) explicitly designed for bulk data access. The standard is pretty well-documented and it didn't take long to write a basic harvester (code at the bottom of the page) to pull and parse the data in the `arXiv` format. There are a few things worth noting about the data though. 
 
  - ArXiv must have used a different scheme for naming the categories before and there are a few categories which appear to have been renamed. There are also a couple of aliases which I mapped to their `math.XX` version.
     - `alg-geom: math.AG`
@@ -45,11 +45,11 @@ Pulling all the metadata from arXiv is a relatively straightforward process as t
     - `q-alg: math.QA`
     - `math-ph: math.MP`
     - `cs.IT: math.IT`
- - ArXiv seems to enforce a maximum line length in the titles (and other fields like abstacts)and will insert line breaks in the titles (explicitly it seems to replace a space with a new line followed by two spaces). I was very confused when I first plotted the distribution of title lengths and found no titles with lengths 73 and 74. To get round this I've simply replaced all instances of `\n  ` with ` ` and I'm hoping this hasn't hit any false positives.
+ - ArXiv seems to enforce a maximum line length in the titles (and other fields like abstracts)and will insert line breaks in the titles (explicitly it seems to replace a space with a new line followed by two spaces). I was very confused when I first plotted the distribution of title lengths and found no titles with lengths 73 and 74. To get round this I've simply replaced all instances of `\n  ` with ` ` and I'm hoping this hasn't hit any false positives.
 
 ## Distribution of title lengths
 
-Since I had spent the time downloading the metadata to find the longest title, I decided I might as well also look at the distribution. There are far too many categories to nicely display the distributions for all of them on a graph, so I settled on four categories: all of maths, combintorics, a selection of pure areas and a selection of applied areas. This is only a blog post so I didn't invest much time pigeonholing the areas and just went down the list assigning the area to either pure, applied or neither. 
+Since I had spent the time downloading the metadata to find the longest title, I decided I might as well also look at the distribution. There are far too many categories to nicely display the distributions for all of them on a graph, so I settled on four categories: all of maths, combinatorics, a selection of pure areas and a selection of applied areas. This is only a blog post so I didn't invest much time pigeonholing the areas and just went down the list assigning the area to either pure, applied or neither. 
 
 Pure: `math.AC, math.AG, math.AT, math.CT, math.FA, math.GN, math.GR, math.GT, math.KT, math.LO, math.NT, math.RA, math.RT`
 
@@ -86,18 +86,18 @@ Finally, we can end with a leaderboard based on the number of papers arXiv.
 <div markdown="1" class="centering">
 
 
-|Name| Number of papers| Primary area|
-|---|---|---|
-|Saharon Shelah|740|Logic|
-|H. Vincent Poor| 438| Information Theory|
-|Delfim F. M. Torres| 334|Optimization and Control|
-|Indranil Biswas|312|Algebraic Geometry|
-|Terence Tao|269|--|
-|Rui Zhang|242|Information Theory|
-|Yuval Peres| 230| Probability|
-|Benny Sudakov|204| Combinatorics|
-| Xueliang Li| 199| Combinatorics|
-|Mohamed-Slim Alouini|195| Information Theory|
+| Name                 | Number of papers | Primary area             |
+|----------------------|-----------------:|--------------------------|
+| Saharon Shelah       |              740 | Logic                    |
+| H. Vincent Poor      |              438 | Information Theory       |
+| Delfim F. M. Torres  |              334 | Optimization and Control |
+| Indranil Biswas      |              312 | Algebraic Geometry       |
+| Terence Tao          |              269 | --                       |
+| Rui Zhang            |              242 | Information Theory       |
+| Yuval Peres          |              230 | Probability              |
+| Benny Sudakov        |              204 | Combinatorics            |
+| Xueliang Li          |              199 | Combinatorics            |
+| Mohamed-Slim Alouini |              195 | Information Theory       |
 
 </div>
 
@@ -105,24 +105,24 @@ And for combinatorics.
 
 <div markdown="1" class="centering">
 
-|Name | Number of combinatorics papers|
-|---|---|
-|Benny Sudakov| 201|
-|Xueliang Li| 198|
-|Doron Zeilberger| 144|
-|William Y. C. Chen| 131|
-|David R. Wood| 121|
-|Alan Frieze| 105|
-|Jacob Fox|104|
-|Michael Krivelevich| 104| 
-|Bojan Mohar| 88|
-|Toufik Mansour| 87|
+| Name                | Number of combinatorics papers |
+|---------------------|-------------------------------:|
+| Benny Sudakov       |                            201 |
+| Xueliang Li         |                            198 |
+| Doron Zeilberger    |                            144 |
+| William Y. C. Chen  |                            131 |
+| David R. Wood       |                            121 |
+| Alan Frieze         |                            105 |
+| Jacob Fox           |                            104 |
+| Michael Krivelevich |                            104 |
+| Bojan Mohar         |                             88 |
+| Toufik Mansour      |                             87 |
 
 </div>
 
 ## Code
 
-You can download the code I used to pull the data from arXiv and generate the statisitics below. The graphs are saved from some poorly hacked together d3.js code that is a collage of different snippets I found online and I'm not prepared to put my name on it.
+You can download the code I used to pull the data from arXiv and generate the statistics below. The graphs are saved from some poorly hacked together d3.js code that is a collage of different snippets I found online and I'm not prepared to put my name on it.
 
 <a href="/downloads/2020-07-16-the-longest-title-on-arxiv.zip" download>Download the code</a>
 
