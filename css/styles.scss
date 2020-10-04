@@ -20,9 +20,13 @@ $width: 720px;
     padding-bottom: 50px;
 }
 
-.centering {
-    display: flex;
-    justify-content: center;
+.centering{
+    overflow: auto;
+}
+
+.centering *{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flex-share {
