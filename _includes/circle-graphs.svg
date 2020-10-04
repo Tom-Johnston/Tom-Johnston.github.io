@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.04 78.198">
+  <g transform="translate(-3.803 10.826)">
+    <path d="M97.234 30.994h42.334" fill="none" stroke="#000" stroke-width=".794"/>
+    <circle cx="97.234" cy="30.994" r="1.984" fill="#006b71"/>
+    <circle cx="107.818" cy="30.994" r="1.984" fill="#006b71"/>
+    <circle cx="118.401" cy="30.994" r="1.984" fill="#006b71"/>
+    <circle cx="128.984" cy="30.994" r="1.984" fill="#006b71"/>
+    <circle cx="139.568" cy="30.994" r="1.984" fill="#006b71"/>
+    <text x="95.305" y="27.76" font-weight="400" font-size="5.644" letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="95.305" y="27.76">A</tspan>
+    </text>
+    <text x="105.804" y="27.76" font-weight="400" font-size="5.644" letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="105.804" y="27.76">B</tspan>
+    </text>
+    <text  x="116.425" y="27.757" font-weight="400" font-size="5.644" letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="116.425" y="27.757">C</tspan>
+    </text>
+    <text  x="126.701" y="27.76" font-weight="400" font-size="5.644" letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="126.701" y="27.76">D</tspan>
+    </text>
+    <text  x="137.688" y="27.76" font-weight="400" font-size="5.644" letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="137.688" y="27.76">E</tspan>
+    </text>
+  </g>
+  <g transform="translate(-3.803 10.656)">
+    <path d="M16.272 20.267L41.435 1.984M25.884 7.037l40.715 13.23M56.987 7.037l-31.103 42.81M16.272 36.619l40.715 13.229M66.599 36.619L41.435 54.9" fill="none" stroke="#000" stroke-width=".794"/>
+    <circle cx="41.435" cy="28.443" r="26.458" fill="none" stroke="#000" stroke-width=".794" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="41.435" cy="1.984" r="1.984" fill="#006b71"/>
+    <circle r="1.984" cy="7.037" cx="56.987" fill="#006b71"/>
+    <circle r="1.984" cy="20.267" cx="66.599" fill="#006b71"/>
+    <circle r="1.984" cy="36.619" cx="66.599" fill="#006b71"/>
+    <circle r="1.984" cy="49.848" cx="56.987" fill="#006b71"/>
+    <circle r="1.984" cy="54.901" cx="41.435" fill="#006b71"/>
+    <circle r="1.984" cy="49.848" cx="25.883" fill="#006b71"/>
+    <circle r="1.984" cy="36.619" cx="16.272" fill="#006b71"/>
+    <circle r="1.984" cy="20.267" cx="16.272" fill="#006b71"/>
+    <circle r="1.984" cy="7.037" cx="25.883" fill="#006b71"/>
+    <text  x="39.506" y="-1.25" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="39.506" y="-1.25" >A</tspan>
+    </text>
+    <text y="22.324" x="9.051"  font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan  y="22.324" x="9.051">A</tspan>
+    </text>
+    <text  x="58.752" y="5.351" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="58.752" y="5.351">C</tspan>
+    </text>
+    <text  x="69.877" y="22.324" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="69.877" y="22.324">B</tspan>
+    </text>
+    <text  x="70.011" y="38.676" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="70.011" y="38.676">E</tspan>
+    </text>
+    <text  x="58.445" y="55.647" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="58.445" y="55.647">D</tspan>
+    </text>
+    <text  x="39.556" y="62.25" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="39.556" y="62.25">E</tspan>
+    </text>
+    <text  x="20.166" y="55.644" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="20.166" y="55.644">C</tspan>
+    </text>
+    <text  x="8.697" y="38.676" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="8.697" y="38.676">D</tspan>
+    </text>
+    <text  x="20.129" y="5.354" font-weight="400" font-size="5.644"  letter-spacing="0" word-spacing="0" stroke-width=".265">
+      <tspan x="20.129" y="5.354">B</tspan>
+    </text>
+  </g>
+</svg>
