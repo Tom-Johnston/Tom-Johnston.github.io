@@ -59,7 +59,7 @@ Applied: `math.CA, math.DS, math.MP, math.NA, math.OC, math.ST`
 
 (I like this style of graph even if I should actually be using a different one.)
 
-The titles are definitely longer in general for the applied ares compared to pure ones, and combinatorics seems to be even more concise. I've not read many applied papers but I generally think of them as having more descriptive titles compared to other areas, so this was pretty much what I expected.
+The titles are definitely longer in general for the applied areas compared to the pure ones, and combinatorics seems to be even more concise. I've not read many applied papers but I generally think of them as having more descriptive titles compared to other areas, so this was pretty much what I expected.
 
 ## Number of authors
 
@@ -67,7 +67,7 @@ One of the advantages of the `arXiv` format is that the authors are listed separ
 
 {% include 2020-07-16-the-longest-title-on-arxiv/authors.svg %}
 
-Unsurprisingly, the vast majority of papers have only a few authors and almost all of them have less than 10. At least some areas in applied maths order the authors by contribution, so there is less incentive to keep the number of authors lower. I've also heard that in some ares the supervisor is always listed even if they didn't contribute much directly to the paper, and this problem contributes a bit to the applied papers having more authors in general.
+Unsurprisingly, the vast majority of papers have only a few authors and almost all of them have less than 10. At least some areas in applied maths order the authors by contribution, so there is less incentive to keep the number of authors lower. I've also heard that in some areas the supervisor is always listed even if they didn't contribute much directly to the paper, and this problem contributes a bit to the applied papers having more authors in general.
 
 ## Number of papers
 
