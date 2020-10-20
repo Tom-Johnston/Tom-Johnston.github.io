@@ -11,15 +11,20 @@ authors:
    last: Narayanan
  - first: Alex
    last: Roberts
-journal: "Submitted"
-volume: 
-pages: 
+journal: "Annales de l'Institut Henri Poincaré, Probabilités et Statistiques"
+volume: "56(3)"
+pages: "2017&ndash;2027"
 arxiv: "1903.10613"
-year: "2019+"
+year: "2020"
 pdf: "/papers/exceptional-graphs-for-the-random-walk.pdf"
-citation: "@article{aru2018exceptional,\n
+citation: "@article{aru2020exceptional,\n
   title={Exceptional graphs for the random walk},\n
   author={Aru, Juhan and Groenland, Carla and Johnston, Tom and Narayanan, Bhargav and Roberts, Alex and Scott, Alex},\n
-  journal={arXiv preprint arXiv:1805.06277},\n
-  year={2018}\n
+  journal={Annales de l'Institut Henri Poincar{\\'e}, Probabilit{\\'e}s et Statistiques},\n
+  volume={56},\n
+  number={3},\n
+  pages={2017--2027},\n
+  year={2020},\n
+  organization={Institut Henri Poincar{\\'e}}\n
+  doi = {10.1214/19-AIHP1026}\n
 }"
