@@ -14,7 +14,7 @@ arxiv: "1903.10613"
 year: "2019+"
 pdf: "/papers/cyclically-covering-subspaces.pdf"
 citation: "@article{aaronson2019cyclically,\n
-  title={Cyclically covering subspaces in $\\mathbb{F}_2^n$},\n
+  title={Cyclically covering subspaces in {$\\mathbb{F}_2^n$}},\n
   author={Aaronson, James and Groenland, Carla and Johnston, Tom},\n
   journal={arXiv preprint arXiv:1903.10613},\n
   year={2019}\n

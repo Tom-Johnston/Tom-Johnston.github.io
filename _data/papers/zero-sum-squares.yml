@@ -10,7 +10,7 @@ arxiv: "2010.10310"
 year: "2020+"
 pdf: "/papers/zero-sum-squares.pdf"
 citation: "@article{johnston2020zero-sum,\n
-  title={Zero-sum squares in $\\{-1,1\\}$-matrices with low discrepancy},\n
+  title={Zero-sum squares in {$\\{-1,1\\}$}-matrices with low discrepancy},\n
   author={Johnston, Tom},\n
   journal={arXiv preprint arXiv:2010.10310},\n
   year={2020}\n
