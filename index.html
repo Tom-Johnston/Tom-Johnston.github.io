@@ -59,7 +59,14 @@ math: true
       <label class="journal-checkbox-label" for="{{paper_hash}}-journal"></label>
     </div>
     <div class="citation-wrapper">
-      <span class="citation">{{paper.citation}}</span>
+      <button class="copy-button" onclick="copyTextFrom('{{paper_hash}}-citation')">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="copy-icon">
+          <title>Copy the citation for {{paper.title}}</title>
+          <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+        </svg>
+        <span class="copy-text">Copy</span>
+      </button>
+      <span id="{{paper_hash}}-citation" class="citation">{{paper.citation}}</span>
     </div>
   </div>
   </div>
@@ -70,3 +77,26 @@ math: true
 <h1>Contact</h1>
 <p>If you have any questions or comments about some interesting maths (or the maths I've done), feel free to send me an email at <a href="mailto:thomas.johnston@lmh.ox.ac.uk">thomas.johnston@lmh.ox.ac.uk</a>.</p>
 </div>
+
+<script>
+
+  function copyTextFrom(id){
+    var el = document.getElementById(id)
+    copyToClipboard(el.textContent)
+  }
+
+function copyToClipboard(text) {
+  navigator.permissions.query({name: "clipboard-write"}).then(result => {
+  if (result.state == "granted" || result.state == "prompt") {
+    navigator.clipboard.writeText(text).then(function() {
+    console.log("Copied to clipboard - ", text)
+  }, function(err) {
+    console.log("Unable to copy to clipboard - ", err)
+  });
+  }else{
+    console.log("Unable to copy to clipbaord - permission denied")
+  }
+});
+}
+
+</script>

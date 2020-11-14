@@ -20,11 +20,11 @@ $width: 720px;
     padding-bottom: 50px;
 }
 
-.centering{
+.centering {
     overflow: auto;
 }
 
-.centering *{
+.centering * {
     margin-left: auto;
     margin-right: auto;
 }
@@ -41,6 +41,39 @@ $width: 720px;
 .hint {
     color: $hint-color;
     font-size: 0.9rem;
+}
+
+.copy-icon {
+    height: 12px;
+    width: 12px;
+    fill: $primary;
+    vertical-align: sub;
+}
+
+.copy-text {
+    color: $primary;
+    font-size: 12px;
+    margin-left: 2px;
+    user-select: none;
+}
+
+.copy-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0;
+    padding: 0;
+    border: none;
+}
+
+.copy-button:hover > .copy-text,
+.copy-button:focus > .copy-text {
+    color: $secondary;
+}
+
+.copy-button:hover > .copy-icon,
+.copy-button:focus > .copy-icon {
+    fill: $secondary;
 }
 
 @media (min-width: $width + 2*15px) {

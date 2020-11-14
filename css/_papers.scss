@@ -23,15 +23,16 @@
     padding: 8px 12px;
 }
 
-.journal, .info {
+.journal,
+.info {
     display: none;
 }
 
-.journal-checkbox:checked ~ .journal{
+.journal-checkbox:checked ~ .journal {
     display: block;
 }
 
-.journal-checkbox:checked ~ .info{
+.journal-checkbox:checked ~ .info {
     display: flex;
 }
 
@@ -62,7 +63,7 @@
     align-items: center;
     min-width: 48px;
 
-    @media print{
+    @media print {
         display: none;
     }
 }
@@ -76,6 +77,10 @@
     &:focus {
         fill: $secondary;
     }
+}
+
+a:focus .icon {
+    fill: $secondary;
 }
 
 .year,
@@ -174,6 +179,7 @@
     display: none;
     position: absolute;
     left: 0;
+    right: 0;
     top: 0;
     margin: 16px;
 }
@@ -182,24 +188,33 @@
     visibility: hidden;
 }
 
-.journal-checkbox{
-    display: none;
+.journal-checkbox {
+    position: absolute;
+    left: -999px;
 }
 
-.journal-checkbox:checked ~ .journal-checkbox-label{
-    &::before{
-        content: 'Show less';
+.journal-checkbox:checked ~ .journal-checkbox-label {
+    &::before {
+        content: "Show less";
     }
 }
 
-.journal-checkbox-label{
+.journal-checkbox:focus ~ .journal-checkbox-label {
+    color: $secondary;
+}
+
+.journal-checkbox-label {
     color: $primary;
     display: block;
     font-size: 0.75rem;
     text-align: center;
     width: 100%;
 
-    &::before{
-        content: 'Show more';
+    &::before {
+        content: "Show more";
+    }
+
+    &:hover {
+        color: $secondary;
     }
 }
