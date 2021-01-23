@@ -186,6 +186,8 @@ h6 {
 
 p {
   margin: 10px 0 15px 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 
   @media print{
     text-align: justify;
