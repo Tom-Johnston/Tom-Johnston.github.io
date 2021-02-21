@@ -1,0 +1,24 @@
+type: article
+title: "Reconstructing the degree sequence of a sparse graph from a partial deck"
+authors:
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+ - first: Andrey
+   last: Kupavskii
+ - first: Kitty
+   last: Meeks 
+ - first: Alex
+   last: Scott
+ - first: Jane
+   last: Tan
+journal: Submitted
+year: 2021+
+pdf: "/papers/reconstructing-the-degree-sequence-of-a-sparse-graph-from-a-partial-deck.pdf"
+citation: "@article{groenland2021reconstructing,\n
+  title={Reconstructing the degree sequence of a sparse graph from a partial deck},\n
+  author={Groenland, Carla and Johnston, Tom and Kupavskii, Andrey and Meeks, Kitty and Scott, Alex and Tan, Jane},\n
+  journal={arXiv preprint arXiv:2102.08679},\n
+  year={2021}\n
+}"
