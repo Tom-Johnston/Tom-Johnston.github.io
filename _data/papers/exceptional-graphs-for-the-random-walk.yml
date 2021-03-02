@@ -16,6 +16,7 @@ volume: "56(3)"
 pages: "2017&ndash;2027"
 arxiv: "1903.10613"
 year: "2020"
+doi: "10.1214/19-AIHP1026"
 pdf: "/papers/exceptional-graphs-for-the-random-walk.pdf"
 citation: "@article{aru2020exceptional,\n
   title={Exceptional graphs for the random walk},\n

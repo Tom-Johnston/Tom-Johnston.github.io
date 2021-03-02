@@ -10,6 +10,7 @@ volume: 170
 pages: "105&ndash;142"
 arxiv: "1810.02729"
 year: 2020
+doi: "10.1016/j.jcta.2019.105142"
 pdf: "/papers/intersection-sizes-of-linear-subspaces-with-the-hypercube.pdf"
 citation: "@article{groenland2020intersection,\n
   title={Intersection sizes of linear subspaces with the hypercube},\n
