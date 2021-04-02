@@ -1,0 +1,19 @@
+title: "Reconstructing trees from small cards"
+authors:
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+ - first: Alex
+   last: Scott
+ - first: Jane
+   last: Tan
+journal: Submitted
+year: 2021+
+pdf: "/papers/reconstructing-trees-from-small-cards.pdf"
+citation: "@article{groenland2021reconstructingtrees,\n
+  title={Reconstructing trees from small cards},\n
+  author={Groenland, Carla and Johnston, Tom and Scott, Alex and Tan, Jane},\n
+  journal={arXiv preprint arXiv:2103.13359},\n
+  year={2021}\n
+}"
