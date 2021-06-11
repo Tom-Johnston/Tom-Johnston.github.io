@@ -11,16 +11,20 @@ authors:
    last: Johnston
  - first: Bartłomiej
    last: Kielak
-journal: "Submitted"
-volume: 
-pages: 
-arxiv: ""
-year: "2020+"
+journal: "Discrete Mathematics"
+volume: "344(9)"
+pages: 112490
+year: "2021"
+doi: "10.1016/j.disc.2021.112490"
 pdf: "/papers/exact-hyperplane-covers-for-subsets-of-the-hypercube.pdf"
 citation: "@article{aaronson2020exact,\n
   title={Exact hyperplane covers for subsets of the hypercube},\n
   author={Aaronson, James and Groenland, Carla and Grzesik, Andrzej and Johnston, Tom and Kielak, Bart{\\l}omiej},\n
-  journal={arXiv preprint arXiv:2010.00315},\n
-  year={2020}\n
+  journal = {Discrete Mathematics},\n
+  year={2021}\n
+  volume={344},\n
+  number={9},\n
+  pages={112490},\n
+  doi = {https://doi.org/10.1016/j.disc.2021.112490},\n
 }"
 code: "/papers/code/exact-hyperplane-covers-for-subsets-of-the-hypercube.zip"
