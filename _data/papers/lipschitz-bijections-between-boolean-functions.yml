@@ -6,15 +6,19 @@ authors:
  - first: Alex
    last: Scott
 journal: Combinatorics, Probability and Computing
-pages: "1&ndash;13"
+pages: "513&ndash;525"
 arxiv: "1812.09215"
 doi: "10.1017/S0963548320000541"
-year: 2020
+year: 2021
+volume: 30(4)
 pdf: "/papers/lipschitz-bijections-between-boolean-functions.pdf"
-citation: "@article{johnstonlipschitz,\n
+citation: "@article{johnston2021lipschitz,\n
   title={Lipschitz bijections between boolean functions},\n
   author={Johnston, Tom and Scott, Alex},\n
   journal={Combinatorics, Probability and Computing},\n
-  pages={1--13},\n
+  volume={30},\n
+  number={4},\n
+  pages={513-525},\n
+  year={2021},\n
   publisher={Cambridge University Press}\n
 }"
