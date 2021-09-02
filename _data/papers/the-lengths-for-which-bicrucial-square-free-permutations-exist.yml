@@ -1,0 +1,20 @@
+type: article
+title: "The lengths for which bicrucial square-free permutations exist"
+authors:
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+journal: "Submitted"
+volume: 
+pages: 
+arxiv: "2109.00502"
+year: "2021+"
+pdf: "/papers/the-lengths-for-which-bicrucial-square-free-permutations-exist.pdf"
+citation: "@article{groenland2021lengths,\n
+  title={The lengths for which bicrucial square-free permutations exist},\n
+  author={Groenland, Carla and Johnston, Tom},\n
+  journal={arXiv preprint arXiv:2109.00502},\n
+  year={2021}\n
+}"
+code: "/papers/code/bicrucial-perms.zip"
