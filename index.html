@@ -67,7 +67,7 @@ math: true
       <label class="journal-checkbox-label" for="{{paper_hash}}-journal"></label>
     </div>
     <div class="citation-wrapper">
-      <button class="copy-button" onclick="copyTextFrom('{{paper_hash}}-citation')">
+      <button class="copy-button" onclick="copyCitation(this,'{{paper_hash}}-citation')">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="copy-icon">
           <title>Copy the citation for {{paper.title}}</title>
           <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
@@ -88,23 +88,20 @@ math: true
 
 <script>
 
-  function copyTextFrom(id){
+  function copyCitation(copyButton, id){
     var el = document.getElementById(id)
-    copyToClipboard(el.textContent)
-  }
-
-function copyToClipboard(text) {
-  navigator.permissions.query({name: "clipboard-write"}).then(result => {
-  if (result.state == "granted" || result.state == "prompt") {
+    text = el.textContent
     navigator.clipboard.writeText(text).then(function() {
-    console.log("Copied to clipboard - ", text)
-  }, function(err) {
-    console.log("Unable to copy to clipboard - ", err)
+    console.log("Copied to clipboard:\n", text)
+    copyButton.children[1].textContent = "Copied"
+    setTimeout(function(){copyButton.children[1].textContent = "Copy"}, 2000)
+    return true
+  }, function() {
+    console.error("Unable to copy to clipboard.\n")
+    copyButton.children[1].textContent = "Error"
+    setTimeout(function(){copyButton.children[1].textContent = "Copy"}, 2000)
+    return false
   });
-  }else{
-    console.log("Unable to copy to clipbaord - permission denied")
   }
-});
-}
 
 </script>
