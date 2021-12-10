@@ -22,3 +22,7 @@ citation: "@article{johnston2021lipschitz,\n
   year={2021},\n
   publisher={Cambridge University Press}\n
 }"
+errata: 
+  - "Theorem 2: The argument for the asymptotic at the end of the proof has been corrected from the published version."
+  - "Theorem 4: $B$ should be a set of maximal points such that the pairwise distance between any two points is at least 2a."
+
