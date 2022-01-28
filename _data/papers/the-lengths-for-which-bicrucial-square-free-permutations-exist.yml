@@ -5,16 +5,20 @@ authors:
    last: Groenland
  - first: Tom
    last: Johnston
-journal: "Submitted"
-volume: 
-pages: 
+journal: "Enumerative Combinatorics and Applications"
+volume: 2(4)
+pages: S4PP4
 arxiv: "2109.00502"
-year: "2021+"
+year: "2022"
 pdf: "/papers/the-lengths-for-which-bicrucial-square-free-permutations-exist.pdf"
-citation: "@article{groenland2021lengths,\n
+citation: "@article{groenland2022lengths,\n
   title={The lengths for which bicrucial square-free permutations exist},\n
   author={Groenland, Carla and Johnston, Tom},\n
-  journal={arXiv preprint arXiv:2109.00502},\n
-  year={2021}\n
+  journal={Enumerative Combinatorics and Applications},\n
+  volume={2},\n
+  number={4},\n
+  pages={S4PP4},\n
+  year={2022},\n
 }"
 code: "/papers/code/bicrucial-perms.zip"
+doi: "10.54550/ECA2022V2S4PP4"
