@@ -170,13 +170,13 @@ We've taken the obvious definition of best above: a strategy which always wins a
 | 1                        | TRACE     | 1                     | 7926  | LEAST                 | 1                                 | 8127              |
 | 2                        | TRACE     | 150                   | 8078  | SALET                 | 147                               | 8136              |
 | 3                        | TRACE     | 1388                  | 7968  | REAST                 | 1223                              | 8167              |
-| 4                        | ???       | ???                   | ???   | ???                   | ???                               | ???               |
+| 4                        | TENOR(?)  | 2298                  | 8101  | ???                   | ???                               | ???               |
 | 5                        | SALET     | 2315                  | 7920  | PALET                 | 2315                              | 8206               |
 | 6                        | SALET     | 2315                  | 7920  | SALET                 | 2315                              | 8122              |
 
 </div>
 
-It is possible to guarantee a win in hard mode in at most 5 guesses, but you have to change from the word SALET to do it and you have to spend quite a few more guesses.
+It is possible to guarantee a win in hard mode in at most 5 guesses, but you have to change from the word SALET to do it and you have to spend quite a few more guesses. I've run the code overnight for 4 guesses in normal mode and checked the top ~650 words, finding the word TENOR can guess all but 17 or them in at most 4 guesses.
 
 ## Good pairs of words
 
