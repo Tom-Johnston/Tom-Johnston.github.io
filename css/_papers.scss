@@ -18,8 +18,7 @@
     display: block;
 }
 
-.links,
-.info-wrapper {
+.links {
     padding: 8px 12px;
 }
 
@@ -49,6 +48,7 @@
 .info-wrapper-wrapper {
     position: relative;
     flex-grow: 1;
+    padding: 8px 12px;
 }
 
 .info-wrapper > :not(:last-child) {
@@ -217,4 +217,26 @@ a:focus .icon {
     &:hover {
         color: $secondary;
     }
+}
+
+.awards-wrapper{
+    align-items: center;
+    display: flex;
+    padding-bottom: 4px;
+}
+
+.citation-checkbox:checked ~ .info-wrapper-wrapper .awards-wrapper {
+    visibility: hidden;
+}
+
+.awards-icon{
+    height: 16px;
+    width: 16px;
+    fill: $primary-light;
+    margin-right: 4px;
+}
+
+.awards-text{
+    font-size: 0.75rem;
+    color: $primary-light;
 }
