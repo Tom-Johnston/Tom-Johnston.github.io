@@ -1,0 +1,22 @@
+type: article
+title: "Improved bounds for 1-independent percolation on \\(\\mathbb{Z}_n\\)"
+authors:
+ - first: Paul
+   last: Balister
+ - first: Tom
+   last: Johnston
+ - first: Michael
+   last: Savery
+ - first: Alex
+   last: Scott
+journal: "Submitted"
+volume: 
+pages: 
+year: "2022+"
+pdf: "/papers/improved-bounds-for-1-independent-percolation.pdf"
+citation: "@article{balister2022improved,\n
+      title={Improved bounds for 1-independent percolation on {$\\mathbb{Z}_n$}},\n
+      author={Balister, Paul and Johnston, Tom and Savery,Michael and Scott, Alex},\n
+      year={2022},\n
+      journal={arXiv preprint arXiv:2206.12335},\n
+}"
