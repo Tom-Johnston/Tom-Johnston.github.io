@@ -18,7 +18,7 @@ volume:
 pages: 
 arxiv: "2202.10789"
 year: "2022+"
-pdf: "/papers/decomposing-random-permutations-into-order-isomorphic-subpermtuations.pdf"
+pdf: "/papers/decomposing-random-permutations-into-order-isomorphic-subpermutations.pdf"
 citation: "@article{groenland2022decomposing,\n
       title={Decomposing random permutations into order-isomorphic subpermutations},\n
       author={Groenland, Carla and Johnston, Tom and Kor\\'andi, D\\'aniel and Roberts, Alexander and Scott, Alex and Tan, Jane},\n
