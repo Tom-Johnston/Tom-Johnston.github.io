@@ -1,0 +1,22 @@
+type: article
+title: "Exact antichain saturation numbers via a generalisation of a result of Lehman-Ron"
+authors:
+ - first: Paul
+   last: Bastide
+ - first: Carla
+   last: Groenland
+ - first: Hugo
+   last: Jacob
+ - first: Tom
+   last: Johnston
+journal: "Submitted"
+volume: 
+pages: 
+year: "2022+"
+pdf: "/papers/exact-antichain-saturation-numbers.pdf"
+citation: "@article{bastide2022exact,\n
+  title={Exact antichain saturation numbers via a generalisation of a result of Lehman-Ron},\n
+  author={Bastide, Paul and Groenland, Carla and Jacob, Hugo and Johnston, Tom},\n
+  journal={arXiv preprint arXiv:2207.07391},\n
+  year={2022}\n
+}"
