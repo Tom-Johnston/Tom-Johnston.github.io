@@ -13,12 +13,17 @@ authors:
    last: Scott
  - first: Jane
    last: Tan
-journal: Submitted
-year: 2021+
+journal: Journal of Combinatorial Theory, Series B
+doi: "10.1016/j.jctb.2022.07.004"
+year: 2022
+volume: 157
+pages: "283&ndash;293"
 pdf: "/papers/reconstructing-the-degree-sequence-of-a-sparse-graph-from-a-partial-deck.pdf"
-citation: "@article{groenland2021reconstructing,\n
+citation: "@article{groenland2022reconstructing,\n
   title={Reconstructing the degree sequence of a sparse graph from a partial deck},\n
   author={Groenland, Carla and Johnston, Tom and Kupavskii, Andrey and Meeks, Kitty and Scott, Alex and Tan, Jane},\n
-  journal={arXiv preprint arXiv:2102.08679},\n
-  year={2021}\n
+  journal = {Journal of Combinatorial Theory, Series B},\n
+  volume = {157},\n
+  pages = {283-293},\n
+  year = {2022},\n
 }"
