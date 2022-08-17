@@ -1,0 +1,22 @@
+type: article
+title: "Perfect shuffling with fewer lazy transpositions"
+authors:
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+ - first: Jamie
+   last: Radcliffe
+ - first: Alex
+   last: Scott
+journal: "Submitted"
+volume: 
+pages: 
+year: "2022+"
+pdf: "/papers/perfect-shuffling-with-fewer-lazy-transpositions.pdf"
+citation: "@article{groenland2022perfect,\n
+  title={Perfect shuffling with fewer lazy transpositions},\n
+  author={Groenland, Carla and Johnston, Tom and Radcliffe, Jamie and Scott, Alex},\n
+  journal={arXiv preprint arXiv:2208.06629},\n
+  year={2022}\n
+}"
