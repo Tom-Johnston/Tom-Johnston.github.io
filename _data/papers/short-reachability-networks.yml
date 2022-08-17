@@ -1,0 +1,22 @@
+type: article
+title: "Short reachability networks"
+authors:
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+ - first: Jamie
+   last: Radcliffe
+ - first: Alex
+   last: Scott
+journal: "Submitted"
+volume: 
+pages: 
+year: "2022+"
+pdf: "/papers/short-reachability-networks.pdf"
+citation: "@article{groenland2022short,\n
+  title={Short reachability networks},\n
+  author={Groenland, Carla and Johnston, Tom and Radcliffe, Jamie and Scott, Alex},\n
+  journal={arXiv preprint arXiv:2208.06630},\n
+  year={2022}\n
+}"
