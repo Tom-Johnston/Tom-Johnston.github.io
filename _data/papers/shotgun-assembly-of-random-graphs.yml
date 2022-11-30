@@ -1,0 +1,22 @@
+type: article
+title: "Shotgun assembly of random graphs"
+authors:
+ - first: Tom
+   last: Johnston
+ - first: Gal
+   last: Kronenberg
+ - first: Alexander
+   last: Roberts
+ - first: Alex
+   last: Scott
+journal: "Submitted"
+volume: 
+pages: 
+year: "2022+"
+pdf: "/papers/shotgun-assembly-of-random-graphs.pdf"
+citation: "@article{johnston2022shotgun,\n
+  title={Shotgun assembly of random graphs},\n
+  author={Johnston, Tom and Kronenberg, Gal and Roberts, Alexander and Scott, Alex},\n
+  journal={arXiv preprint arXiv:2211.14218},\n
+  year={2022}\n
+}"
