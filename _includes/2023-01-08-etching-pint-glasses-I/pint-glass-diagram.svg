@@ -1,0 +1,29 @@
+<svg style="max-height: 300px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.481 178.288">
+  <defs>
+    <marker id="c" refX="0" refY="0" orient="auto" overflow="visible">
+      <path d="M0 4.52v-9.04" fill="none" fill-opacity=".75" fill-rule="evenodd" stroke="#000" stroke-width=".8pt"/>
+    </marker>
+    <marker id="b" refX="0" refY="0" orient="auto" overflow="visible">
+      <path d="M0 4.52v-9.04" fill="none" fill-opacity=".75" fill-rule="evenodd" stroke="#000" stroke-width=".8pt"/>
+    </marker>
+    <marker id="a" refX="0" refY="0" orient="auto" overflow="visible">
+      <path d="M0 4.52v-9.04" fill="none" fill-opacity=".75" fill-rule="evenodd" stroke="#000" stroke-width=".8pt"/>
+    </marker>
+  </defs>
+  <path d="M6.25 12h87.5" fill="none" stroke="#000" stroke-width=".5" marker-start="url(#a)" marker-end="url(#a)" transform="translate(-5.717 -5.706)"/>
+  <path d="M78.083 165.994l9.95-153.7H.533l9.95 153.7z" fill="none" stroke="#000"/>
+  <text x="38.913" y="9.664" font-weight="400" font-size="5.333" letter-spacing="0" word-spacing="0" transform="translate(-5.717 -5.706)">
+    <tspan x="38.913" y="9.664">87.5mm</tspan>
+  </text>
+  <path d="M16.2 177.7h67.6" fill="none" stroke="#000" stroke-width=".5" marker-start="url(#b)" marker-end="url(#b)" transform="translate(-5.717 -5.706)"/>
+  <text x="38.908" y="183.918" font-weight="400" font-size="5.333" letter-spacing="0" word-spacing="0" transform="translate(-5.717 -5.706)">
+    <tspan x="38.908" y="183.918">67.6mm</tspan>
+  </text>
+  <path d="M78.083 165.994V12.33M10.483 165.994V12.508" fill="none" stroke="#000" stroke-width=".5" stroke-dasharray="1.5,1.5"/>
+  <path d="M99.75 18L89.8 171.7" fill="none" stroke="#000" stroke-width=".5" marker-start="url(#c)" marker-end="url(#c)" transform="translate(-5.717 -5.706)"/>
+  <text x="77.675" y="-103.716" transform="rotate(93.789 -.188 -5.528)" font-weight="400" font-size="5.333" letter-spacing="0" word-spacing="0">
+    <tspan x="77.675" y="-103.716">154mm</tspan>
+  </text>
+  <path d="M85.027 12.294v90" fill="none" stroke="#006b71" stroke-linecap="round"/>
+  <path d="M3.539 12.294v90" fill="none" stroke="#006b71" stroke-linecap="round"/>
+</svg>

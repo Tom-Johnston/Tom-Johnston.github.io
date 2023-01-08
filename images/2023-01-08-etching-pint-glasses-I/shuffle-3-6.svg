@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 180 53">
+  <path d="M0 1.5h180M0 11.5h180M0 21.5h180M0 31.5h180M0 41.5h180M0 51.5h180M18 11.5v10" stroke="#000"/>
+  <circle r="1.5" cy="11.5" cx="18"/>
+  <circle r="1.5" cy="21.5" cx="18"/>
+  <path d="M36 1.5v20" stroke="#000"/>
+  <circle r="1.5" cy="1.5" cx="36"/>
+  <circle r="1.5" cy="21.5" cx="36"/>
+  <path d="M54 11.5v10" stroke="#000"/>
+  <circle r="1.5" cy="11.5" cx="54"/>
+  <circle r="1.5" cy="21.5" cx="54"/>
+  <path d="M72 21.5v10" stroke="#000"/>
+  <circle r="1.5" cy="21.5" cx="72"/>
+  <circle r="1.5" cy="31.5" cx="72"/>
+  <path d="M90 11.5v10" stroke="#000"/>
+  <circle r="1.5" cy="11.5" cx="90"/>
+  <circle r="1.5" cy="21.5" cx="90"/>
+  <path d="M90 31.5v10" stroke="#000"/>
+  <circle r="1.5" cy="31.5" cx="90"/>
+  <circle r="1.5" cy="41.5" cx="90"/>
+  <path d="M108 1.5v20" stroke="#000"/>
+  <circle r="1.5" cy="1.5" cx="108"/>
+  <circle r="1.5" cy="21.5" cx="108"/>
+  <path d="M108 31.5v20" stroke="#000"/>
+  <circle r="1.5" cy="31.5" cx="108"/>
+  <circle r="1.5" cy="51.5" cx="108"/>
+  <path d="M126 21.5v10" stroke="#000"/>
+  <circle r="1.5" cy="21.5" cx="126"/>
+  <circle r="1.5" cy="31.5" cx="126"/>
+  <path d="M144 11.5v30" stroke="#000"/>
+  <circle r="1.5" cy="11.5" cx="144"/>
+  <circle r="1.5" cy="41.5" cx="144"/>
+  <path d="M162 1.5v50" stroke="#000"/>
+  <circle r="1.5" cy="1.5" cx="162"/>
+  <circle r="1.5" cy="51.5" cx="162"/>
+</svg>
