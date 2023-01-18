@@ -1,0 +1,24 @@
+type: article
+title: "Counting graphic sequences via integrated random walks"
+authors:
+ - first: Paul
+   last: Balister
+ - first: Serte
+   last: Donderwinkel
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+ - first: Alex
+   last: Scott
+journal: "Submitted"
+volume: 
+pages: 
+year: "2023+"
+pdf: "/papers/counting-graphic-sequences-via-integrated-random-walks.pdf"
+citation: "@article{balister2023counting,\n
+      title={Counting graphic sequences via integrated random walks},\n
+      author={Balister, Paul and Donderwinkel, Serte and Groenland, Carla and Johnston, Tom and Scott, Alex},\n
+      year={2023},\n
+      journal={arXiv preprint arXiv:2301.07022},\n
+}"
