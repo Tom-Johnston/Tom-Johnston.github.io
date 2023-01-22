@@ -33,7 +33,7 @@ $width: 720px;
     display: flex;
 }
 
-.flex-share * {
+.flex-share > * {
     flex-grow: 1;
     width: 0;
 }
