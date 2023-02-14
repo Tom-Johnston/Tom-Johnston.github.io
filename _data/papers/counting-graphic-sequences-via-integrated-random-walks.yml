@@ -16,6 +16,7 @@ volume:
 pages: 
 year: "2023+"
 pdf: "/papers/counting-graphic-sequences-via-integrated-random-walks.pdf"
+code: "/papers/code/graphic-seq.zip"
 citation: "@article{balister2023counting,\n
       title={Counting graphic sequences via integrated random walks},\n
       author={Balister, Paul and Donderwinkel, Serte and Groenland, Carla and Johnston, Tom and Scott, Alex},\n
