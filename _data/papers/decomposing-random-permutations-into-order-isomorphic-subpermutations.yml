@@ -13,15 +13,19 @@ authors:
    last: Scott
  - first: Jane
    last: Tan
-journal: "Submitted"
-volume: 
-pages: 
+journal: SIAM Journal on Discrete Mathematics
+volume: 37(2)
+pages: "1252&ndash;1261"
 arxiv: "2202.10789"
-year: "2022+"
+year: "2023"
+doi: "10.1137/22M148029X"
 pdf: "/papers/decomposing-random-permutations-into-order-isomorphic-subpermutations.pdf"
 citation: "@article{groenland2022decomposing,\n
       title={Decomposing random permutations into order-isomorphic subpermutations},\n
       author={Groenland, Carla and Johnston, Tom and Kor\\'andi, D\\'aniel and Roberts, Alexander and Scott, Alex and Tan, Jane},\n
-      year={2022},\n
-      journal={arXiv preprint arXiv:2202.10789},\n
+      journal = {SIAM Journal on Discrete Mathematics},\n
+      volume = {37},\n
+      number = {2},\n
+      pages = {1252-1261},\n
+      year = {2023},\n
 }"
