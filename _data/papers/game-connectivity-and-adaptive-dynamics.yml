@@ -1,0 +1,22 @@
+type: article
+title: "Game connectivity and adaptive dynamics"
+authors:
+ - first: Tom
+   last: Johnston
+ - first: Michael
+   last: Savery
+ - first: Alex
+   last: Scott
+ - first: Bassel
+   last: Tarbush
+journal: "Submitted"
+volume: 
+pages: 
+year: "2023+"
+pdf: "/papers/game-connectivity-and-adaptive-dynamics.pdf"
+citation: "@article{johnston2023game,\n
+  title={Game Connectivity and Adaptive Dynamics},\n
+  author={Johnston, Tom and Savery, Michael and Scott, Alex and Tarbush, Bassel},\n
+  journal={arXiv preprint arXiv:2309.10609},\n
+  year={2023}\n
+}"
