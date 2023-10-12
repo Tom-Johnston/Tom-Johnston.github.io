@@ -1,0 +1,22 @@
+type: article
+title: "A polynomial upper bound for poset saturation"
+authors:
+ - first: Paul
+   last: Bastide
+ - first: Carla
+   last: Groenland
+ - first: Maria-Romina
+   last: Ivan
+ - first: Tom
+   last: Johnston
+journal: "Submitted"
+volume: 
+pages: 
+year: "2023+"
+pdf: "/papers/a-polynomial-upper-bound-for-poset-saturation.pdf"
+citation: "@article{bastide2023polynomial,\n
+  title={A polynomial upper bound for poset saturation},\n
+  author={Bastide, Paul and Groenland, Carla and Ivan, Maria-Romina and Johnston, Tom},\n
+  journal={arXiv preprint arXiv:2310.04634},\n
+  year={2023}\n
+}"
