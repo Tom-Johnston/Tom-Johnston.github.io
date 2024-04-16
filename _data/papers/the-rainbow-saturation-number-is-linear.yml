@@ -11,14 +11,18 @@ authors:
    last: Morrison
  - first: Shannon
    last: Ogden
-journal: "Submitted"
-volume: 
-pages: 
-year: "2022+"
+journal: "SIAM Journal on Discrete Mathematics"
+volume: 38 (2)
+pages: "1239&ndash;1249"
+year: "2024"
+doi: "10.1137/23M1566881"
 pdf: "/papers/the-rainbow-saturation-number-is-linear.pdf"
-citation: "@article{behague2022rainbow,\n
+citation: "@article{behague2024rainbow,\n
   title={The rainbow saturation number is linear},\n
   author={Behague, Natalie and Johnston, Tom and Letzter, Shoham and Morrison, Natasha and Ogden, Shannon},\n
-  journal={arXiv preprint arXiv:2211.08589},\n
-  year={2022}\n
+  journal = {SIAM Journal on Discrete Mathematics},\n
+  volume = {38},\n
+  number = {2},\n
+  pages = {1239-1249},\n
+  year = {2024},\n
 }"
