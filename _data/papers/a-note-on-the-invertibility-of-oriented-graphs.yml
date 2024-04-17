@@ -1,0 +1,22 @@
+type: article
+title: "A note on the invertibility of oriented graphs"
+authors:
+ - first: Natalie
+   last: Behague
+ - first: Tom
+   last: Johnston
+ - first: Natasha
+   last: Morrison
+ - first: Shannon
+   last: Ogden
+journal: "Submitted"
+volume: 
+pages: 
+year: "2024+"
+pdf: "/papers/a-note-on-the-invertibility-of-oriented-graphs.pdf"
+citation: "@article{behague2024invertibility,\n
+  title={A note on the invertibility of oriented graphs},\n
+  author={Behague, Natalie and Johnston, Tom and Morrison, Natasha and Ogden, Shannon},\n
+  journal={arXiv preprint arXiv:2404.10663},\n
+  year={2024}\n
+}"
