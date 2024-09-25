@@ -9,14 +9,14 @@ authors:
    last: Ivan
  - first: Tom
    last: Johnston
-journal: "Submitted"
-volume: 
-pages: 
-year: "2023+"
+journal: "European Journal of Combinatorics"
+volume:
+year: "2024"
+doi: "10.1016/j.ejc.2024.103970"
 pdf: "/papers/a-polynomial-upper-bound-for-poset-saturation.pdf"
-citation: "@article{bastide2023polynomial,\n
+citation: "@article{bastide2024polynomial,\n
   title={A polynomial upper bound for poset saturation},\n
   author={Bastide, Paul and Groenland, Carla and Ivan, Maria-Romina and Johnston, Tom},\n
-  journal={arXiv preprint arXiv:2310.04634},\n
-  year={2023}\n
+  journal={European Journal of Combinatorics},\n
+  year={2024}\n
 }"
