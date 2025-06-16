@@ -1,0 +1,24 @@
+type: article
+title: "Infinite induced-saturated graphs"
+authors:
+ - first: Marthe
+   last: Bonamy
+ - first: Carla
+   last: Groenland
+ - first: Tom
+   last: Johnston
+ - first: Natasha
+   last: Morrison
+ - first: Alex
+   last: Scott
+journal: "Submitted"
+volume: 
+pages: 
+year: "2025+"
+pdf: "/papers/infinite-induced-saturated-graphs.pdf"
+citation: "@article{bonamy2025infinite,\n
+  title={Infinite induced-saturated graphs},\n
+  author={Bonamy, Marthe and Groenland, Carla and Johnston, Tom and Morrison, Natasha and Scott, Alex},\n
+  journal={arXiv preprint arXiv:2506.08810},\n
+  year={2025}\n
+}"
