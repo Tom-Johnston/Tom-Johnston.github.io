@@ -9,14 +9,15 @@ authors:
    last: Roberts
  - first: Alex
    last: Scott
-journal: "Submitted"
+journal: "Probability Theory and Related Fields"
 volume: 
 pages: 
-year: "2022+"
+year: "2025"
+doi: "10.1007/s00440-025-01380-x"
 pdf: "/papers/shotgun-assembly-of-random-graphs.pdf"
 citation: "@article{johnston2022shotgun,\n
   title={Shotgun assembly of random graphs},\n
   author={Johnston, Tom and Kronenberg, Gal and Roberts, Alexander and Scott, Alex},\n
-  journal={arXiv preprint arXiv:2211.14218},\n
-  year={2022}\n
+  journal={Probability Theory and Related Fields},\n
+  year={2025}\n
 }"
