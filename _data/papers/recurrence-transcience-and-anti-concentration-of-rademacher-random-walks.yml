@@ -1,0 +1,20 @@
+type: article
+title: "Recurrence, transience and anti-concentration of Rademacher random walks"
+authors:
+ - first: Satyaki
+   last: Bhattacharya
+ - first: Edward
+   last: Crane
+ - first: Tom
+   last: Johnston
+journal: "Submitted"
+volume: 
+pages: 
+year: "2025+"
+pdf: "/papers/recurrence-transcience-and-anti-concentration-of-rademacher-random-walks.pdf"
+citation: "@article{bhattacharya2025recurrence,\n
+  title={Recurrence, transience and anti-concentration of Rademacher random walks},\n
+  author={Bhattacharya, Satyaki and Crane, Edward and Johnston, Tom},\n
+  journal={arXiv preprint arXiv:2510.24568},\n
+  year={2025}\n
+}"
