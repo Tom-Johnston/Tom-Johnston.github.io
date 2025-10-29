@@ -10,13 +10,17 @@ authors:
  - first: Tom
    last: Johnston
 journal: "European Journal of Combinatorics"
-volume:
-year: "2024"
+volume: "129"
+pages: "103970"
+year: "2025"
 doi: "10.1016/j.ejc.2024.103970"
 pdf: "/papers/a-polynomial-upper-bound-for-poset-saturation.pdf"
 citation: "@article{bastide2024polynomial,\n
   title={A polynomial upper bound for poset saturation},\n
   author={Bastide, Paul and Groenland, Carla and Ivan, Maria-Romina and Johnston, Tom},\n
   journal={European Journal of Combinatorics},\n
-  year={2024}\n
+  volume={129},\n
+  pages={103970},\n
+  note={Selected papers of EuroComb 2023},\n
+  year={2025}\n
 }"
