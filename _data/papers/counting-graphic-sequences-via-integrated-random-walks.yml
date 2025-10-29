@@ -11,15 +11,19 @@ authors:
    last: Johnston
  - first: Alex
    last: Scott
-journal: "Submitted"
-volume: 
-pages: 
-year: "2023+"
+journal: "Transactions of the American Mathematical Society"
+volume: "378 (7)"
+pages: "4627&ndash;4669"
+year: "2025"
+doi: "10.1090/tran/9403"
 pdf: "/papers/counting-graphic-sequences-via-integrated-random-walks.pdf"
 code: "/papers/code/graphic-seq.zip"
 citation: "@article{balister2023counting,\n
       title={Counting graphic sequences via integrated random walks},\n
       author={Balister, Paul and Donderwinkel, Serte and Groenland, Carla and Johnston, Tom and Scott, Alex},\n
-      year={2023},\n
-      journal={arXiv preprint arXiv:2301.07022},\n
+      year={2025},\n
+      journal={Transactions of the American Mathematical Society},\n
+      volume={378},\n
+      number={7},\n
+      pages={4627--4669}\n
 }"
