@@ -9,10 +9,10 @@ authors:
    last: Radcliffe
  - first: Alex
    last: Scott
-journal: "Submitted"
+journal: "Discrete Mathematics &amp; Theoretical Computer Science"
 volume: 
 pages: 
-year: "2022+"
+year: "2025+"
 pdf: "/papers/short-reachability-networks.pdf"
 citation: "@article{groenland2022short,\n
   title={Short reachability networks},\n
