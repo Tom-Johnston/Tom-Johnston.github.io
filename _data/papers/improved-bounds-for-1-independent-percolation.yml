@@ -9,14 +9,17 @@ authors:
    last: Savery
  - first: Alex
    last: Scott
-journal: "Submitted"
-volume: 
-pages: 
-year: "2022+"
+journal: "Electronic Journal of Probability"
+volume: 30
+pages: "1&ndash;26"
+year: "2025"
+doi: "10.1214/25-EJP1341"
 pdf: "/papers/improved-bounds-for-1-independent-percolation.pdf"
 citation: "@article{balister2022improved,\n
       title={Improved bounds for 1-independent percolation on {$\\mathbb{Z}_n$}},\n
       author={Balister, Paul and Johnston, Tom and Savery, Michael and Scott, Alex},\n
-      year={2022},\n
-      journal={arXiv preprint arXiv:2206.12335},\n
+      year={2025},\n
+      journal={Electronic Journal of Probability},\n
+      volume={30},\n
+      pages={1--26},\n
 }"
