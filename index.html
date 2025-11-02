@@ -3,116 +3,129 @@ layout: default
 math: true
 ---
 <div id="main-content" class="content">
-<h1>About</h1>
+  <h1>About</h1>
 
-<p>I'm currently a <a rel="noreferrer" target="_blank" href="https://heilbronn.ac.uk/">Heilbronn Research Fellow</a> at the <a rel="noreferrer" target="_blank" href="https://www.bristol.ac.uk/">University of Bristol</a>. Before my current role I spent 8 years at the <a rel="noreferrer" target="_blank" href="https://www.ox.ac.uk/">University of Oxford</a>, first as an undergraduate studying for an MMath and then as a postgraduate studying for a DPhil under the supervision of <a rel="noreferrer" target="_blank" href="https://people.maths.ox.ac.uk/scott/">Alex Scott</a>.</p>
+  <p>I'm currently a <a rel="noreferrer" target="_blank" href="https://heilbronn.ac.uk/">Heilbronn Research Fellow</a>
+    at the <a rel="noreferrer" target="_blank" href="https://www.bristol.ac.uk/">University of Bristol</a>. Before my
+    current role I spent 8 years at the <a rel="noreferrer" target="_blank" href="https://www.ox.ac.uk/">University of
+      Oxford</a>, first as an undergraduate studying for an MMath and then as a postgraduate studying for a DPhil under
+    the supervision of <a rel="noreferrer" target="_blank" href="https://people.maths.ox.ac.uk/scott/">Alex Scott</a>.
+  </p>
 
-<p>My main research interests are extremal and probabilistic combinatorics.</p>
+  <p>My main research interests are extremal and probabilistic combinatorics.</p>
 
-<h1>Papers</h1>
-<div>
+  <h1>Papers</h1>
+  <div>
 
-{% assign order = site.data.papers["_order"] | reverse %}
+    {% assign order = site.data.papers["_order"] | reverse %}
 
-{% for paper_hash in order %}
-{% assign paper = site.data.papers[paper_hash] %}
-  <div class="references">
-    <input class="citation-checkbox" type="checkbox" id="{{paper_hash}}">
-    <div class="links">
-      <label for="{{paper_hash}}">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-          <title>Toggle the citation for {{paper.title}}</title>
-          <path d="M3.636 6.882v5.687H5.91v.426l-1.99 4.123h3.412l1.99-4.123V6.882zm9.1 0v5.687h2.274v.426l-1.99 4.123h3.412l1.99-4.123V6.882z" stroke-width="1.155"/>
-        </svg>
-      </label>
+    {% for paper_hash in order %}
+    {% assign paper = site.data.papers[paper_hash] %}
+    <div class="references">
+      <input class="citation-checkbox" type="checkbox" id="{{paper_hash}}">
+      <div class="links">
+        <label for="{{paper_hash}}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+            <title>Toggle the citation for {{paper.title}}</title>
+            <path
+              d="M3.636 6.882v5.687H5.91v.426l-1.99 4.123h3.412l1.99-4.123V6.882zm9.1 0v5.687h2.274v.426l-1.99 4.123h3.412l1.99-4.123V6.882z"
+              stroke-width="1.155" />
+          </svg>
+        </label>
         <a class="pdf" href="{{paper.pdf}}" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
             <title>Download the PDF of {{paper.title}}</title>
-            <path d="M6 2c-1.1 0-1.99.9-1.99 2l-.004 7h-.012C2.89 11 2 12.037 2 13.326v2.348C2 16.963 2.89 18 3.994 18h.008L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm0 2h7v5h5v2H6V4zm-.85 8.113h1.68c.227 0 .437.038.633.114a1.45 1.45 0 01.994 1.392c0 .226-.042.435-.127.621-.084.182-.2.34-.348.473a1.61 1.61 0 01-.52.314 1.836 1.836 0 01-.632.106h-.78v1.754h-.9v-4.774zm3.946 0h1.613c.378 0 .717.06 1.02.174.302.116.56.28.773.492.213.21.375.46.486.754.116.294.174.616.174.967 0 .356-.058.68-.174.973a2.062 2.062 0 01-.486.754c-.213.208-.471.37-.773.486a2.835 2.835 0 01-1.02.174H9.096v-4.774zm4.79 0h3.026v.854h-2.127v1.16H16.7v.853h-1.914v1.907h-.898v-4.774zm-7.837.854v1.312h.793c.235 0 .415-.066.535-.199a.67.67 0 00.133-.707.489.489 0 00-.133-.207.6.6 0 00-.22-.146.848.848 0 00-.315-.053h-.793zm3.945 0v3.066h.674c.262 0 .493-.036.693-.107a1.279 1.279 0 00.8-.793c.067-.191.1-.402.1-.633 0-.231-.032-.44-.099-.627a1.267 1.267 0 00-.3-.486 1.32 1.32 0 00-.5-.307 1.955 1.955 0 00-.694-.113h-.674zM6 18h12v2H6v-2z"/>
+            <path
+              d="M6 2c-1.1 0-1.99.9-1.99 2l-.004 7h-.012C2.89 11 2 12.037 2 13.326v2.348C2 16.963 2.89 18 3.994 18h.008L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm0 2h7v5h5v2H6V4zm-.85 8.113h1.68c.227 0 .437.038.633.114a1.45 1.45 0 01.994 1.392c0 .226-.042.435-.127.621-.084.182-.2.34-.348.473a1.61 1.61 0 01-.52.314 1.836 1.836 0 01-.632.106h-.78v1.754h-.9v-4.774zm3.946 0h1.613c.378 0 .717.06 1.02.174.302.116.56.28.773.492.213.21.375.46.486.754.116.294.174.616.174.967 0 .356-.058.68-.174.973a2.062 2.062 0 01-.486.754c-.213.208-.471.37-.773.486a2.835 2.835 0 01-1.02.174H9.096v-4.774zm4.79 0h3.026v.854h-2.127v1.16H16.7v.853h-1.914v1.907h-.898v-4.774zm-7.837.854v1.312h.793c.235 0 .415-.066.535-.199a.67.67 0 00.133-.707.489.489 0 00-.133-.207.6.6 0 00-.22-.146.848.848 0 00-.315-.053h-.793zm3.945 0v3.066h.674c.262 0 .493-.036.693-.107a1.279 1.279 0 00.8-.793c.067-.191.1-.402.1-.633 0-.231-.032-.44-.099-.627a1.267 1.267 0 00-.3-.486 1.32 1.32 0 00-.5-.307 1.955 1.955 0 00-.694-.113h-.674zM6 18h12v2H6v-2z" />
           </svg>
         </a>
         {% if paper.code %}
-          <a class="paper-code" href="{{paper.code}}" download>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-              <title>Download the code for {{paper.title}}</title>
-              <path d="M9.92 15.68L6.24 12l3.68-3.68L8.8 7.2 4 12l4.8 4.8zm4.16 0L17.76 12l-3.68-3.68L15.2 7.2 20 12l-4.8 4.8z"/>
-            </svg>
-          </a>
+        <a class="paper-code" href="{{paper.code}}" download>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+            <title>Download the code for {{paper.title}}</title>
+            <path
+              d="M9.92 15.68L6.24 12l3.68-3.68L8.8 7.2 4 12l4.8 4.8zm4.16 0L17.76 12l-3.68-3.68L15.2 7.2 20 12l-4.8 4.8z" />
+          </svg>
+        </a>
         {% endif %}
         {% if paper.doi %}
         <a href="https://doi.org/{{paper.doi}}" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-          <title>Digital Object Identifier</title>
-          <path d="M5.49 10.447c-.452 0-.87.328-1.16.668-.234.277-.351.702-.351 1.057 0 .354.133.748.367 1.024.286.34.593.574 1.048.574.41 0 .897-.172 1.178-.453.285-.28.522-.752.522-1.161 0-.405-.11-.89-.396-1.17-.285-.286-.804-.54-1.209-.54zm8.098.111c-.47 0-.852.185-1.146.554-.24.296-.36.633-.36 1.012 0 .383.12.723.36 1.02.294.368.676.553 1.146.553.418 0 .773-.15 1.062-.452.29-.306.435-.68.435-1.121 0-.437-.147-.806-.441-1.107a1.401 1.401 0 00-1.056-.459zM12 .5C5.649.5.5 5.649.5 12S5.649 23.5 12 23.5 23.5 18.351 23.5 12 18.351.5 12 .5zM9.272 15.514h-2.13v-.867c-.216.272-.725.549-.946.673a3.01 3.01 0 01-1.404.357 3.102 3.102 0 01-2.125-.8c-.741-.652-1.09-1.651-1.09-2.728 0-1.095.38-1.97 1.14-2.623.602-.52 1.34-.936 2.122-.936.455 0 1.017.04 1.417.234.23.11.642.37.886.623V4.88h2.13v10.635zm7.29-.98c-.708.816-1.7 1.224-2.974 1.224-1.28 0-2.274-.408-2.982-1.224-.585-.67-.877-1.493-.877-2.468 0-.88.295-1.658.884-2.338.713-.82 1.727-1.23 3.043-1.23 1.21 0 2.177.41 2.9 1.23.588.67.883 1.469.883 2.396 0 .937-.292 1.74-.877 2.41zm1.798-9.238c.249-.248.55-.372.904-.372.355 0 .656.124.905.372.248.244.372.543.372.898 0 .358-.124.662-.372.91a1.228 1.228 0 01-.905.366 1.23 1.23 0 01-.904-.372 1.243 1.243 0 01-.366-.904c0-.355.122-.654.366-.898zm2.036 10.213h-2.264V8.747h2.264z"/>
-        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+            <title>Digital Object Identifier</title>
+            <path
+              d="M5.49 10.447c-.452 0-.87.328-1.16.668-.234.277-.351.702-.351 1.057 0 .354.133.748.367 1.024.286.34.593.574 1.048.574.41 0 .897-.172 1.178-.453.285-.28.522-.752.522-1.161 0-.405-.11-.89-.396-1.17-.285-.286-.804-.54-1.209-.54zm8.098.111c-.47 0-.852.185-1.146.554-.24.296-.36.633-.36 1.012 0 .383.12.723.36 1.02.294.368.676.553 1.146.553.418 0 .773-.15 1.062-.452.29-.306.435-.68.435-1.121 0-.437-.147-.806-.441-1.107a1.401 1.401 0 00-1.056-.459zM12 .5C5.649.5.5 5.649.5 12S5.649 23.5 12 23.5 23.5 18.351 23.5 12 18.351.5 12 .5zM9.272 15.514h-2.13v-.867c-.216.272-.725.549-.946.673a3.01 3.01 0 01-1.404.357 3.102 3.102 0 01-2.125-.8c-.741-.652-1.09-1.651-1.09-2.728 0-1.095.38-1.97 1.14-2.623.602-.52 1.34-.936 2.122-.936.455 0 1.017.04 1.417.234.23.11.642.37.886.623V4.88h2.13v10.635zm7.29-.98c-.708.816-1.7 1.224-2.974 1.224-1.28 0-2.274-.408-2.982-1.224-.585-.67-.877-1.493-.877-2.468 0-.88.295-1.658.884-2.338.713-.82 1.727-1.23 3.043-1.23 1.21 0 2.177.41 2.9 1.23.588.67.883 1.469.883 2.396 0 .937-.292 1.74-.877 2.41zm1.798-9.238c.249-.248.55-.372.904-.372.355 0 .656.124.905.372.248.244.372.543.372.898 0 .358-.124.662-.372.91a1.228 1.228 0 01-.905.366 1.23 1.23 0 01-.904-.372 1.243 1.243 0 01-.366-.904c0-.355.122-.654.366-.898zm2.036 10.213h-2.264V8.747h2.264z" />
+          </svg>
         </a>
         {% endif %}
-    </div>
-    
-    <div class="info-wrapper-wrapper">
-      {% if paper.award %}
-      <div class="awards-wrapper">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="awards-icon">
-          <title>{{paper.award}}</title>
-          <path d="M19,5h-2V3H7v2H5C3.9,5,3,5.9,3,7v1c0,2.55,1.92,4.63,4.39,4.94c0.63,1.5,1.98,2.63,3.61,2.96V19H7v2h10v-2h-4v-3.1 c1.63-0.33,2.98-1.46,3.61-2.96C19.08,12.63,21,10.55,21,8V7C21,5.9,20.1,5,19,5z M5,8V7h2v3.82C5.84,10.4,5,9.3,5,8z M19,8 c0,1.3-0.84,2.4-2,2.82V7h2V8z"/>
-        </svg>
-        <span class="awards-text">
-          {{paper.award}}
-        </span>
+      </div>
+
+      <div class="info-wrapper-wrapper">
+        {% if paper.award %}
+        <div class="awards-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="awards-icon">
+            <title>{{paper.award}}</title>
+            <path
+              d="M19,5h-2V3H7v2H5C3.9,5,3,5.9,3,7v1c0,2.55,1.92,4.63,4.39,4.94c0.63,1.5,1.98,2.63,3.61,2.96V19H7v2h10v-2h-4v-3.1 c1.63-0.33,2.98-1.46,3.61-2.96C19.08,12.63,21,10.55,21,8V7C21,5.9,20.1,5,19,5z M5,8V7h2v3.82C5.84,10.4,5,9.3,5,8z M19,8 c0,1.3-0.84,2.4-2,2.82V7h2V8z" />
+          </svg>
+          <span class="awards-text">
+            {{paper.award}}
+          </span>
         </div>
         {% endif %}
-    <div class="info-wrapper">
-      <span class="title">{{paper.title}}</span>
-      <div class="authors">
-        {% for author in paper.authors %}
-        <span class="author">{{author.first}} {{author.last}}</span>
-        {% endfor %}
+        <div class="info-wrapper">
+          <span class="title">{{paper.title}}</span>
+          <div class="authors">
+            {% for author in paper.authors %}
+            <span class="author">{{author.first}} {{author.last}}</span>
+            {% endfor %}
+          </div>
+          {% if paper.journal %}
+          <span class="journal">{{paper.journal}}</span>
+          <div class="info">
+            <span class="year">{{paper.year}}</span>
+            <span class="volume">{{paper.volume}}</span>
+            <span class="pages">{{paper.pages}}</span>
+          </div>
+          {% endif %}
+        </div>
+        <div class="citation-wrapper">
+          <button class="copy-button" onclick="copyCitation(this,'{{paper_hash}}-citation')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="copy-icon">
+              <title>Copy the citation for {{paper.title}}</title>
+              <path
+                d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+            </svg>
+            <span class="copy-text">Copy</span>
+          </button>
+          <span id="{{paper_hash}}-citation" class="citation">{{paper.citation}}</span>
+        </div>
       </div>
-      <input class="journal-checkbox" type="checkbox" id="{{paper_hash}}-journal">
-      <span class="journal">{{paper.journal}}</span>
-      <div class="info">
-        <span class="year">{{paper.year}}</span>
-        <span class="volume">{{paper.volume}}</span>
-        <span class="pages">{{paper.pages}}</span>
-      </div>
-      <label class="journal-checkbox-label" for="{{paper_hash}}-journal"></label>
     </div>
-    <div class="citation-wrapper">
-      <button class="copy-button" onclick="copyCitation(this,'{{paper_hash}}-citation')">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="copy-icon">
-          <title>Copy the citation for {{paper.title}}</title>
-          <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-        </svg>
-        <span class="copy-text">Copy</span>
-      </button>
-      <span id="{{paper_hash}}-citation" class="citation">{{paper.citation}}</span>
-    </div>
-  </div>
+
+    {% endfor %}
   </div>
 
-{% endfor %}
-</div>
-
-<h1>Contact</h1>
-<p>If you have any questions or comments about some interesting maths (or the maths I've done), feel free to send me an email at <a href="mailto:tom.johnston@bristol.ac.uk">tom.johnston@bristol.ac.uk</a>.</p>
+  <h1>Contact</h1>
+  <p>If you have any questions or comments about some interesting maths (or the maths I've done), feel free to send me
+    an email at <a href="mailto:tom.johnston@bristol.ac.uk">tom.johnston@bristol.ac.uk</a>.</p>
 </div>
 
 <script>
 
-  function copyCitation(copyButton, id){
+  function copyCitation(copyButton, id) {
     var el = document.getElementById(id)
     text = el.textContent
-    navigator.clipboard.writeText(text).then(function() {
-    console.log("Copied to clipboard:\n", text)
-    copyButton.children[1].textContent = "Copied"
-    setTimeout(function(){copyButton.children[1].textContent = "Copy"}, 2000)
-    return true
-  }, function() {
-    console.error("Unable to copy to clipboard.\n")
-    copyButton.children[1].textContent = "Error"
-    setTimeout(function(){copyButton.children[1].textContent = "Copy"}, 2000)
-    return false
-  });
+    navigator.clipboard.writeText(text).then(function () {
+      console.log("Copied to clipboard:\n", text)
+      copyButton.children[1].textContent = "Copied"
+      setTimeout(function () { copyButton.children[1].textContent = "Copy" }, 2000)
+      return true
+    }, function () {
+      console.error("Unable to copy to clipboard.\n")
+      copyButton.children[1].textContent = "Error"
+      setTimeout(function () { copyButton.children[1].textContent = "Copy" }, 2000)
+      return false
+    });
   }
 
 </script>

@@ -18,20 +18,19 @@
     display: block;
 }
 
+.journal,
+.year,
+.volume,
+.pages {
+    flex-grow: 1;
+    padding-top: 0;
+}
+
 .links {
     padding: 8px 12px;
 }
 
-.journal,
 .info {
-    display: none;
-}
-
-.journal-checkbox:checked ~ .journal {
-    display: block;
-}
-
-.journal-checkbox:checked ~ .info {
     display: flex;
 }
 
@@ -39,7 +38,7 @@
     flex-grow: 1;
 }
 
-.info > :not(:last-child) {
+.info> :not(:last-child) {
     padding-right: 4px;
     margin-right: 4px;
     border-right: solid 1px rgba(51, 51, 51, 0.12);
@@ -51,7 +50,7 @@
     padding: 8px 12px;
 }
 
-.info-wrapper > :not(:last-child) {
+.info-wrapper> :not(:last-child) {
     padding-bottom: 4px;
     margin-bottom: 4px;
     border-bottom: solid 1px rgba(51, 51, 51, 0.12);
@@ -83,12 +82,6 @@ a:focus .icon {
     fill: $secondary;
 }
 
-.year,
-.volume,
-.pages {
-    flex-grow: 1;
-}
-
 .authors {
     display: flex;
     flex-wrap: wrap;
@@ -109,15 +102,20 @@ a:focus .icon {
 
 .title::before,
 .authors::before,
-.year::before,
-.journal::before,
-.volume::before,
-.pages::before,
 .citation::before {
     position: absolute;
     transform: translateY(-100%) translateX(1px);
     font-size: 0.75rem;
     color: $primary;
+}
+
+.journal::before,
+.year::before,
+.volume::before,
+.pages::before {
+    font-size: 0.75rem;
+    color: $primary;
+    margin-right: 0.75rem;
 }
 
 .title::before {
@@ -153,25 +151,25 @@ a:focus .icon {
     left: -999px;
 }
 
-.citation-checkbox ~ .links label svg:hover {
+.citation-checkbox~.links label svg:hover {
     stroke: $secondary;
 }
 
-.citation-checkbox:focus ~ .links label svg {
+.citation-checkbox:focus~.links label svg {
     stroke: $secondary;
 }
 
-.citation-checkbox ~ .links label svg {
+.citation-checkbox~.links label svg {
     fill: none;
     stroke: $text-color;
     cursor: pointer;
 }
 
-.citation-checkbox:checked ~ .links label svg {
+.citation-checkbox:checked~.links label svg {
     fill: $text-color;
 }
 
-.citation-checkbox:checked ~ .info-wrapper-wrapper .citation-wrapper {
+.citation-checkbox:checked~.info-wrapper-wrapper .citation-wrapper {
     display: block;
 }
 
@@ -184,59 +182,47 @@ a:focus .icon {
     margin: 16px;
 }
 
-.citation-checkbox:checked ~ .info-wrapper-wrapper .info-wrapper {
+.citation-checkbox:checked~.info-wrapper-wrapper .info-wrapper {
     visibility: hidden;
 }
 
-.journal-checkbox {
-    position: absolute;
-    left: -999px;
-}
-
-.journal-checkbox:checked ~ .journal-checkbox-label {
-    &::before {
-        content: "Show less";
-    }
-}
-
-.journal-checkbox:focus ~ .journal-checkbox-label {
-    color: $secondary;
-}
-
-.journal-checkbox-label {
-    color: $primary;
-    display: block;
-    font-size: 0.75rem;
-    text-align: center;
-    width: 100%;
-
-    &::before {
-        content: "Show more";
-    }
-
-    &:hover {
-        color: $secondary;
-    }
-}
-
-.awards-wrapper{
+.awards-wrapper {
     align-items: center;
     display: flex;
     padding-bottom: 4px;
 }
 
-.citation-checkbox:checked ~ .info-wrapper-wrapper .awards-wrapper {
+.citation-checkbox:checked~.info-wrapper-wrapper .awards-wrapper {
     visibility: hidden;
 }
 
-.awards-icon{
+.awards-icon {
     height: 16px;
     width: 16px;
     fill: $primary-light;
     margin-right: 4px;
 }
 
-.awards-text{
+.awards-text {
     font-size: 0.75rem;
     color: $primary-light;
+}
+
+@media screen and (max-width: 480px) {
+
+    .journal,
+    .year,
+    .volume,
+    .pages {
+        padding-top: 1rem;
+    }
+
+    .journal::before,
+    .year::before,
+    .volume::before,
+    .pages::before {
+        margin-right: 0rem;
+        position: absolute;
+        transform: translateY(-100%) translateX(1px);
+    }
 }

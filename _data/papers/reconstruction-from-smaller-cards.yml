@@ -8,7 +8,7 @@ authors:
    last: Scott
  - first: Jane
    last: Tan
-journal: Submitted
+journal: 
 year: 2021+
 pdf: "/papers/reconstruction-from-smaller-cards.pdf"
 citation: "@article{groenland2021reconstruction,\n
