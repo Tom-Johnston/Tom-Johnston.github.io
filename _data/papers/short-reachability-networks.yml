@@ -10,13 +10,16 @@ authors:
  - first: Alex
    last: Scott
 journal: "Discrete Mathematics &amp; Theoretical Computer Science"
-volume: 
+volume: 27(3)
 pages: 
-year: "2025+"
+year: 2025
+doi: "10.46298/dmtcs.12454"
 pdf: "/papers/short-reachability-networks.pdf"
-citation: "@article{groenland2022short,\n
+citation: "@article{groenland2025short,\n
   title={Short reachability networks},\n
   author={Groenland, Carla and Johnston, Tom and Radcliffe, Jamie and Scott, Alex},\n
-  journal={arXiv preprint arXiv:2208.06630},\n
-  year={2022}\n
+  journal={Discrete Mathematics \\& Theoretical Computer Science},\n
+  volume={27},\n
+  number={3},\n
+  year={2025}\n
 }"
