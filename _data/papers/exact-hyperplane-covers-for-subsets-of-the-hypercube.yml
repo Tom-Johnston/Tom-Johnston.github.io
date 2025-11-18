@@ -21,7 +21,7 @@ citation: "@article{aaronson2020exact,\n
   title={Exact hyperplane covers for subsets of the hypercube},\n
   author={Aaronson, James and Groenland, Carla and Grzesik, Andrzej and Johnston, Tom and Kielak, Bart{\\l}omiej},\n
   journal = {Discrete Mathematics},\n
-  year={2021}\n
+  year={2021},\n
   volume={344},\n
   number={9},\n
   pages={112490},\n
