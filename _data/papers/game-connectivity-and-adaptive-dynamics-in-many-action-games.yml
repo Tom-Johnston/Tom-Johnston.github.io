@@ -1,0 +1,22 @@
+type: article
+title: "Game connectivity and adaptive dynamics in many-action games"
+authors:
+ - first: Tom
+   last: Johnston
+ - first: Michael
+   last: Savery
+ - first: Alex
+   last: Scott
+ - first: Bassel
+   last: Tarbush
+journal: 
+volume: 
+pages: 
+year: "2026+"
+pdf: "/papers/game-connectivity-and-adaptive-dynamics-in-many-action-games.pdf"
+citation: "@article{johnston2026game,\n
+  title={Game connectivity and adaptive dynamics in many-action games},\n
+  author={Johnston, Tom and Savery, Michael and Scott, Alex and Tarbush, Bassel},\n
+  journal={arXiv preprint arXiv:2601.05965},\n
+  year={2026}\n
+}"
