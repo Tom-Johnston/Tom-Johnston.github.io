@@ -11,15 +11,16 @@ authors:
    last: Morrison
  - first: Alex
    last: Scott
-journal: 
-volume: 
-pages: 
-year: "2025+"
+journal: Canadian Journal of Mathematics
+pages: "1&ndash;31"
+doi: 10.4153/S0008414X26102132 
+year: "2026"
 code: "/papers/code/infinite-induced-saturated-graphs.zip"
 pdf: "/papers/infinite-induced-saturated-graphs.pdf"
 citation: "@article{bonamy2025infinite,\n
   title={Infinite induced-saturated graphs},\n
   author={Bonamy, Marthe and Groenland, Carla and Johnston, Tom and Morrison, Natasha and Scott, Alex},\n
-  journal={arXiv preprint arXiv:2506.08810},\n
-  year={2025}\n
+  journal={Canadian Journal of Mathematics},\n
+  pages={1--31},\n
+  year={2026}\n
 }"

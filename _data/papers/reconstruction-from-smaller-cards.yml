@@ -8,12 +8,19 @@ authors:
    last: Scott
  - first: Jane
    last: Tan
-journal: 
-year: 2021+
+journal: Israel Journal of Mathematics
+year: 2026
+volume: 273(2)
+pages: "823&ndash;860"
+doi: 10.1007/s11856-025-2858-3
 pdf: "/papers/reconstruction-from-smaller-cards.pdf"
-citation: "@article{groenland2021reconstruction,\n
+citation: "@article{groenland2026reconstruction,\n
   title={Reconstruction from smaller cards},\n
   author={Groenland, Carla and Johnston, Tom and Scott, Alex and Tan, Jane},\n
-  journal={arXiv preprint arXiv:2103.13359},\n
-  year={2021}\n
+  journal={Israel Journal of Mathematics},\n
+  volume={273},\n
+  number={2},\n
+  pages={823--860},\n
+  year={2026},\n
+  publisher={Springer}\n
 }"
